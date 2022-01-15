@@ -69,8 +69,8 @@ exec(`cd /sdcard/download && play *mp3`)
    
    helga.on('chat-update', async (mek) => {
         require('./helga.js')(helga, mek)
-        ownerNumber = ["6282138919347@s.whatsapp.net","6282138919347@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
-        dtod = "6282138919347@s.whatsapp.net"
+        ownerNumber = ["6281262163214@s.whatsapp.net","6281262163214@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
+        dtod = "6281262163214@s.whatsapp.net"
        otod = `${settings.NomorOwner}@s.whatsapp.net`
     })   
     
@@ -83,7 +83,7 @@ exec(`cd /sdcard/download && play *mp3`)
 			if (anu.action == 'add') {
 			const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
         	if(!welkom.includes(mdata.id)) return
-			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;helga;;;\nFN:helga\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+			fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6281262163214-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;helga;;;\nFN:helga\nitem1.TEL;waid=6281262163214:6281262163214\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 		    num = anu.participants[0]
 			try {
 			ppimg = await helga.getProfilePicture(`${num.split('@')[0]}@c.us`)
@@ -96,7 +96,7 @@ exec(`cd /sdcard/download && play *mp3`)
 			mhan = await helga.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${masuk}`,
-footerText: `𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 ٬࿊⃟𝑯𝒆𝒍𝒈𝒂𝒂 𝒁𝒆𝒙'𝒔シ︎`, 
+footerText: `follow : @itschandra_28シ︎`, 
 buttons: gbutsan,
 headerType: 4 }
 			helga.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('./helga.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
@@ -116,7 +116,7 @@ headerType: 4 }
 			mhan = await helga.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${keluar}`,
-footerText: `@itschandra_28 シ︎`,
+footerText: `follow : @itschandra_28シ︎`,
 buttons: gbutsan,
 headerType: 4 }
 			helga.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, { thumbnail: fs.readFileSync('./helga.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
@@ -130,7 +130,7 @@ helga.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid
 console.log(color('|TRM|'), color(`Promote Member ${num.split('@')[0]} In ${mdata.subject}`,  'cyan'))
 } 
 else if (anu.action == 'demote') {
-fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;helga;;;\nFN:helga\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6281262163214-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;helga;;;\nFN:helga\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 shp = '◦➛'
 thu = await helga.getStatus(anu.participants[0], MessageType.text)
 num = anu.participants[0]
@@ -204,7 +204,6 @@ year: 'numeric'
 })
 helga.copyNForward(m.key.remoteJid, m.message)
 helga.sendMessage(m.key.remoteJid, `▷\`\`\`Anti Delete\`\`\`
-
 ▢ \`\`\`Nama : @${m.participant.split("@")[0]}\`\`\`
 ▢ \`\`\`Tipe : ${c3type}\`\`\`
 ▢ \`\`\`Tanggal : ${jam} - ${week} ${weton} - ${calender}\`\`\``, MessageType.text, {quoted: m.message, contextInfo: {"mentionedJid": [m.participant]}})
