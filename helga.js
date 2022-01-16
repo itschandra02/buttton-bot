@@ -984,6 +984,10 @@ reply(String(e))
 			    helga.groupRemove(from, [kic]).catch((e) => { reply(mess.only.Badmin) })
             }
         }
+        
+   //TAGALL
+
+
 			// MUTE
         if (isMuted){
             if (!isGroupAdmins && !isOwner && !mek.key.fromMe) return
@@ -1066,7 +1070,7 @@ reply('https://youtube.com/c/HelgaZexs妥')
 			if (isCmd && antiSpam.isFiltered(from) && !isGroup) { console.log(color('[SPAM]', 'red'), color(time, 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname))
 return reply('[~] Permintaan Di Prosess...')}  
 if (isCmd && antiSpam.isFiltered(from) && isGroup) { console.log(color('[SPAM]', 'red'), color(time, 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname), 'in', color(groupName))
-return reply('Jangan Spam Command Banh :(')}
+return reply('Jangan Spam Command ya Sayang 😘😘 :(')}
 if (isCmd && !isOwner) antiSpam.addFilter(from)
 		if (!publik) {
 		if (!isOwner && !mek.key.fromMe) return
@@ -1192,14 +1196,20 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ ❑ ${prefix}ytmp4 < link >
 │ ❑ ${prefix}mediafire < link >
 │ ❑ ${prefix}ytmp3 < link >
+│ ❑ ${prefix}ytsearch < query >
+│ ❑ ${prefix}zippyshare < link >
+│ ❑ ${prefix}facebook < link >
 │ ❑ ${prefix}tiktok < link >
 │ ❑ ${prefix}igdl < link >
 ╰────
 
 ╭───── • ✩ • ─────
-├ ➽ *Sticker Menu 📌* 
+├ ➽ *STICKER Menu 📌* 
 │ ❑ ${prefix}take
 │ ❑ ${prefix}swm
+│ ❑ ${prefix}telesticker [ link ]
+│ ❑ ${prefix}smoji
+│ ❑ ${prefix}smoji2
 │ ❑ ${prefix}sticker [ Reply ]
 │ ❑ ${prefix}sgif 
 │ ❑ ${prefix}toimg [ Reply/Video ]
@@ -1210,6 +1220,9 @@ _⫹⫺💬Time : ${timeWib} WIB_
 ├ ➽ *RANDOM TEXT* 📃
 │ ❑ ${prefix}quotes
 │ ❑ ${prefix}quotesyt
+│ ❑ ${prefix}quotesdilan
+│ ❑ ${prefix}quotesimage
+│ ❑ ${prefix}quotesanime
 │ ❑ ${prefix}quotesislami
 │ ❑ ${prefix}quoteskanye
 │ ❑ ${prefix}katasindiran
@@ -1222,15 +1235,43 @@ _⫹⫺💬Time : ${timeWib} WIB_
 ╭───── • ✩ • ─────
 ├ ➽ *INFO MENU ℹ️* 
 │ ❑ ${prefix}infogempa
+│ ❑ ${prefix}kodepos2
+│ ❑ ${prefix}jadwaltv
+│ ❑ ${prefix}jarak
+│ ❑ ${prefix}heroml
+│ ❑ ${prefix}newsinfo
+│ ❑ ${prefix}cnnindonesia
+│ ❑ ${prefix}cnnnasional
+│ ❑ ${prefix}cnninternasional
+│ ❑ ${prefix}hoax
+│ ❑ ${prefix}jalantikus
+│ ❑ ${prefix}republika
+│ ❑ ${prefix}kumparan
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
-├ ➽ *INFORMASI ℹ️*
-│ ❑ ${prefix}ping
-│ ❑ ${prefix}speed
-│ ❑ ${prefix}runtime
-│ ❑ ${prefix}tes
-│ ❑ ${prefix}bugreport [ query ]
+├ ➽ *ISLAM MENU* ☪️
+│ ❑ ${prefix}jadwalsolat 
+│ ❑ ${prefix}alquran
+│ ❑ ${prefix}alquranaudio
+│ ❑ ${prefix}asmaulhusna
+│ ❑ ${prefix}kisahnabi
+│ ❑ ${prefix}listsurah
+│ ❑ ${prefix}jadwalsolat2
+╰───── • ✩ • ─────
+
+╭───── • ✩ • ─────
+├ ➽ *MOVIE & STORY MENU 🎬* 
+│ ❑ ${prefix}lk21
+│ ❑ ${prefix}wattpadsearch
+│ ❑ ${prefix}wattpad
+│ ❑ ${prefix}drakorongoing
+╰───── • ✩ • ─────
+
+╭───── • ✩ • ─────
+├ ➽ *PLAY MENU ▶️️*
+│ ❑ ${prefix}spotify
+│ ❑ ${prefix}jooxplay
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1240,13 +1281,22 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ ❑ ${prefix}halah
 │ ❑ ${prefix}hilih
 ╰───── • ✩ • ─────
+
+╭───── • ✩ • ─────
+├ ➽ *MANGA MENU 🀄*
+│ ❑ ${prefix}anime
+│ ❑ ${prefix}character
+│ ❑ ${prefix}manga
+│ ❑ ${prefix}kusonime
+│ ❑ ${prefix}kusonimesearch
+╰───── • ✩ • ─────
  
- ╭───── • ✩ • ─────
+╭───── • ✩ • ─────
 ├ ➽ *TO MENU* 🔘
 │ ❑ ${prefix}toimg < ReplyStiker >
 ╰───── • ✩ • ─────
 
- ╭───── • ✩ • ─────
+╭───── • ✩ • ─────
 ├ ➽ *SEARCHING MENU* 🔎 
 │ ❑ ${prefix}pinterest < Query >
 │ ❑ ${prefix}playstore < nama apk >
@@ -1255,7 +1305,7 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ ❑ ${prefix}kbbi < query >
 ╰───── • ✩ • ─────
  
- ╭───── • ✩ • ─────
+╭───── • ✩ • ─────
 ├ ➽ *RANDOM IMAGE* 🖼️
 │ ❑ ${prefix}loli
 │ ❑ ${prefix}meme
@@ -1265,26 +1315,13 @@ _⫹⫺💬Time : ${timeWib} WIB_
 ╭───── • ✩ • ─────
 ├ ➽ *FUN MENU 🥴* 
 │ ❑ ${prefix}artinama
-│ ❑ ${prefix}artimimpi
 │ ❑ ${prefix}cerpen
+│ ❑ ${prefix}artimimpi
+│ ❑ ${prefix}ceritahoror
+│ ❑ ${prefix}darkjokes
 ╰───── • ✩ • ─────
-
+ 
 ╭───── • ✩ • ─────
-├ ➽ *ASUPAN MENU* 🗿
-│ ❑ ${prefix}62
-│ ❑ ${prefix}santuy
-│ ❑ ${prefix}ukhti
-│ ❑ ${prefix}bocil
-│ ❑ ${prefix}ghea
-│ ❑ ${prefix}rikagusriani
-╰───── • ✩ • ─────
- 
- ╭───── • ✩ • ─────
-├ ➽ *ISLAM MENU* ☪️
-│ ❑ ${prefix}jadwalsolat <nama lokasi>
-╰───── • ✩ • ─────
- 
- ╭───── • ✩ • ─────
 ├ ➽ *HEWAN MENU* 🦴
 │ ❑ ${prefix}kucing
 │ ❑ ${prefix}dog
@@ -1295,9 +1332,56 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ ❑ ${prefix}koala
 ╰───── • ✩ • ─────
 
- ╭───── • ✩ • ─────
+╭───── • ✩ • ─────
+├ ➽ *ePHOTO360 MENU* 📷
+│ ❑ ${prefix}wetglass <text>
+│ ❑ ${prefix}multicolor3d <text>
+│ ❑ ${prefix}watercolor <text>
+│ ❑ ${prefix}luxurygold <text>
+│ ❑ ${prefix}galaxywallpaper <text>
+│ ❑ ${prefix}lighttext <text>
+│ ❑ ${prefix}beautifulflower <text>
+│ ❑ ${prefix}puppycute <text>
+│ ❑ ${prefix}royaltext <text>
+│ ❑ ${prefix}heartshaped <text>
+│ ❑ ${prefix}birthdaycake <text>
+│ ❑ ${prefix}galaxystyle <text>
+│ ❑ ${prefix}hologram3d <text>
+│ ❑ ${prefix}greenneon <text>
+│ ❑ ${prefix}glossychrome <text>
+│ ❑ ${prefix}greenbush <text>
+│ ❑ ${prefix}metallogo <text>
+│ ❑ ${prefix}glittergold <text>
+│ ❑ ${prefix}textcake <text>
+│ ❑ ${prefix}starsnight <text>
+│ ❑ ${prefix}wooden3d <text>
+│ ❑ ${prefix}snow3d <text>
+│ ❑ ${prefix}writegalacy <text>
+│ ❑ ${prefix}textbyname <text>
+│ ❑ ${prefix}galaxybat <text>
+│ ❑ ${prefix}birthdayday <text>
+│ ❑ ${prefix}goldplaybutton <text>
+│ ❑ ${prefix}goldplaybutton <text>
+│ ❑ ${prefix}silverplaybutton <text>
+│ ❑ ${prefix}silverplaybutton <text>
+╰───── • ✩ • ─────
+
+╭───── • ✩ • ─────
+├ ➽ *ePHOTO360 MENU v2* 📸
+│ ❑ ${prefix}pornhub <text> <text>
+│ ❑ ${prefix}avenger <text> <text>
+│ ❑ ${prefix}space <text> <text>
+│ ❑ ${prefix}ninjalogo <text> <text>
+│ ❑ ${prefix}marvelstudio <text> <text>
+│ ❑ ${prefix}lionlogo <text> <text>
+│ ❑ ${prefix}wolflogo <text> <text>
+│ ❑ ${prefix}steel3d <text> <text>
+│ ❑ ${prefix}wallgravity <text> <text>
+│ ❑ ${prefix}glitch <text> <text>
+╰───── • ✩ • ─────
+
+╭───── • ✩ • ─────
 ├ ➽ *MAKER MENU* 🖼️
-│ ❑ ${prefix}jadwalsolat <nama lokasi>
 │ ❑ ${prefix}magma <text>
 │ ❑ ${prefix}glossy <text>
 │ ❑ ${prefix}luxury <text>
@@ -1350,7 +1434,7 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ ❑ ${prefix}megumin
 │ ❑ ${prefix}neko
 │ ❑ ${prefix}trapnime
-│ ❑ ${prefix}loli
+│ ❑ ${prefix}loli2
 │ ❑ ${prefix}husbu
 │ ❑ ${prefix}milf
 │ ❑ ${prefix}cosplay
@@ -1400,7 +1484,7 @@ _⫹⫺💬Time : ${timeWib} WIB_
 
 ╭───── • ✩ • ─────
 ├ ➽ *Group Menu 🛠️* 
-│ ❑ ${prefix}nsfw
+│ ❑ ${prefix}tagall
 │ ❑ ${prefix}group open / close
 │ ❑ ${prefix}antilink on / off
 │ ❑ ${prefix}antiwame on / off
@@ -1432,16 +1516,25 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ ❑ ${prefix}public
 ╰───── • ✩ • ─────
 
+╭───── • ✩ • ─────
+├ ➽ *ASUPAN MENU* 🗿
+│ ❑ ${prefix}62
+│ ❑ ${prefix}santuy
+│ ❑ ${prefix}ukhti
+│ ❑ ${prefix}bocil
+│ ❑ ${prefix}ghea
+│ ❑ ${prefix}rikagusriani
+╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
-├ ➽ *Sticker Menu 📌* 
-│ ❑ ${prefix}take
-│ ❑ ${prefix}swm
-│ ❑ ${prefix}sticker [ Reply ]
-│ ❑ ${prefix}sgif 
-│ ❑ ${prefix}toimg [ Reply/Video ]
-│ ❑ ${prefix}attp
+├ ➽ *INFORMASI 🗺️*
+│ ❑ ${prefix}ping
+│ ❑ ${prefix}speed
+│ ❑ ${prefix}runtime
+│ ❑ ${prefix}tes
+│ ❑ ${prefix}bugreport [ query ]
 ╰───── • ✩ • ─────
+
 
 ║▌│█║▌│ █║▌│█│║▌║
 ║▌│█║▌│ █║▌│█│║▌║
@@ -1469,7 +1562,7 @@ case 'bugreport':
               if (args.length < 1) return reply(`Ketik ${prefix}bugreport [fiturnya] [Error Nya Gimana]`) 
               teks = args.join(' ')
               reply('Terima Kasih Telah Melaporkan Bug Pada Owner, Jika Itu Sekedar Iseng Maka Akan Di Ban Oleh Bot!')
-              helga.sendMessage('6282138919347@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
+              helga.sendMessage('6281262163214@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
               break
               case 'verify':
 if (isRegistered) return reply(mess.success)
@@ -1631,6 +1724,20 @@ reply('Oke')
 client.close()
 }
 break
+
+case 'tagall':
+					if (!isGroup) return reply('KHSUS GROUP BROO!!!!')
+					if (!isGroupAdmins) return reply('Khususs ADMIN')
+					members_id = []
+					teks = (args.length > 1) ? body.slice(8).trim() : ''
+					teks += '\n\n'
+					for (let mem of groupMembers) {
+						teks += `➽ @${mem.jid.split('@')[0]}\n`
+						members_id.push(mem.jid)
+					}
+					mentions(teks, members_id, true)
+					break
+
 case 'owner':
 	case 'creator':
 case 'developer':
@@ -2265,6 +2372,16 @@ cantik = await getBuffer(`https://api.dapuhy.xyz/api/randomimage/darkjokes?apike
 sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
 break
 
+case 'fb':
+          case 'facebook':
+              if (!q) return reply('Link Nya?')
+              reply('Lagi Proses Upload...')
+              data = await fetchJson(`https://api.lolhuman.xyz/api/facebook?apikey=itschandra&url=${q}`)
+              ini_video = await getBuffer(data.result)
+              helga.sendMessage(from, ini_video, video, { quoted: mek })
+              break
+
+
 case 'nsfwneko':
 case 'nsfwlesbian':
 case 'nsfwkuni':
@@ -2722,13 +2839,786 @@ helga.sendMessage(from, buff1, image, {quoted: mek, caption: '_Nih kak cowoknya_
 buff2 =await getBuffer (anu.result.wanita)
 helga.sendMessage(from, buff2, image, {quoted: mek, caption: '_Nih kak ceweknya_♀️'})
 break				   
-//═════════════════════════ [ SEARCH MENU ] ═════════════════════════
-//═════════════════════════ [ COPAS AJA ] ═════════════════════════
+
+//═════════════════════════ [ ISLAM MENU ] ═════════════════════════
+
+case 'jadwalsholat2':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Yogyakarta`)
+                    daerah = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/sholat/${daerah}?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = `Wilayah : ${get_result.wilayah}\n`
+                    ini_txt += `Tanggal : ${get_result.tanggal}\n`
+                    ini_txt += `Sahur : ${get_result.sahur}\n`
+                    ini_txt += `Imsak : ${get_result.imsak}\n`
+                    ini_txt += `Subuh : ${get_result.subuh}\n`
+                    ini_txt += `Terbit : ${get_result.terbit}\n`
+                    ini_txt += `Dhuha : ${get_result.dhuha}\n`
+                    ini_txt += `Dzuhur : ${get_result.dzuhur}\n`
+                    ini_txt += `Ashar : ${get_result.ashar}\n`
+                    ini_txt += `Maghrib : ${get_result.imsak}\n`
+                    ini_txt += `Isya : ${get_result.isya}`
+                    reply(ini_txt)
+                    break
+
+case 'listsurah':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/quran?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = 'List Surah:\n'
+                    for (var x in get_result) {
+                        ini_txt += `${x}. ${get_result[x]}\n`
+                    }
+                    reply(ini_txt)
+                    break
+   
+                     case 'alquran':
+                    if (args.length < 1) return reply(`Example: ${prefix + command} 18 or ${prefix + command} 18/10 or ${prefix + command} 18/1-10`)
+                    urls = `https://api.lolhuman.xyz/api/quran/${args[0]}?apikey=itschandra`
+                    quran = await fetchJson(urls)
+                    result = quran.result
+                    ayat = result.ayat
+                    ini_txt = `QS. ${result.surah} : 1-${ayat.length}\n\n`
+                    for (var x of ayat) {
+                        arab = x.arab
+                        nomor = x.ayat
+                        latin = x.latin
+                        indo = x.indonesia
+                        ini_txt += `${arab}\n${nomor}. ${latin}\n${indo}\n\n`
+                    }
+                    ini_txt = ini_txt.replace(/<u>/g, "").replace(/<\/u>/g, "")
+                    ini_txt = ini_txt.replace(/<strong>/g, "").replace(/<\/strong>/g, "")
+                    ini_txt = ini_txt.replace(/<u>/g, "").replace(/<\/u>/g, "")
+                    reply(ini_txt)
+                    break
+
+case 'alquranaudio':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} 18 atau ${prefix + command} 18/10`)
+                    surah = args[0]
+                    ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/${surah}?apikey=itschandra`)
+                    await helga.sendMessage(from, ini_buffer, audio, { quoted: mek, mimetype: Mimetype.mp4Audio })
+                    break
+
+case 'listkota':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/sholat/kota?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = 'List Surah:\n'
+                    for (var x in get_result) {
+                        ini_txt += `${x}. ${get_result[x]}\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+case 'asmaulhusna':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/asmaulhusna?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = `No : ${get_result.index}\n`
+                    ini_txt += `Latin: ${get_result.latin}\n`
+                    ini_txt += `Arab : ${get_result.ar}\n`
+                    ini_txt += `Indonesia : ${get_result.id}\n`
+                    ini_txt += `English : ${get_result.en}`
+                    reply(ini_txt)
+                    break
+
+case 'kisahnabi':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/kisahnabi/${query}?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = `Name : ${get_result.name}\n`
+                    ini_txt += `Lahir : ${get_result.thn_kelahiran}\n`
+                    ini_txt += `Umur : ${get_result.age}\n`
+                    ini_txt += `Tempat : ${get_result.place}\n`
+                    ini_txt += `Story : \n${get_result.story}`
+                    reply(ini_txt)
+                    break
+//═════════════════════════ [ Download MENU ] ═════════════════════════
+
+case 'ytsearch':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/ytsearch?apikey=itschandra&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = ""
+                    for (var x of get_result) {
+                        ini_txt += `Title : ${x.title}\n`
+                        ini_txt += `Views : ${x.views}\n`
+                        ini_txt += `Published : ${x.published}\n`
+                        ini_txt += `Thumbnail : ${x.thumbnail}\n`
+                        ini_txt += `Link : https://www.youtube.com/watch?v=${x.videoId}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+
+//═════════════════════════ [ STIKER MENU ] ═════════════════════════
+
+case 'telesticker':
+case 'stickertele':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://t.me/addstickers/LINE_Menhera_chan_ENG`)
+                    ini_url = args[0]
+                    ini_url = await fetchJson(`https://api.lolhuman.xyz/api/telestick?apikey=itschandra&url=${ini_url}`)
+                    ini_sticker = ini_url.result.sticker
+                    for (sticker_ in ini_sticker) {
+                        ini_buffer = await getBuffer(ini_sticker[sticker_])
+                        await helga.sendMessage(from, ini_buffer, sticker)
+                    }
+                    
+   break
+
+case 'zippyshare':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://www51.zippyshare.com/v/5W0TOBz1/file.html`)
+                    ini_url = args[0]
+                    ini_url = await fetchJson(`https://api.lolhuman.xyz/api/zippyshare?apikey=itschandra&url=${ini_url}`)
+                    ini_url = ini_url.result
+                    ini_txt = `File Name : ${ini_url.name_file}\n`
+                    ini_txt += `Size : ${ini_url.size}\n`
+                    ini_txt += `Date Upload : ${ini_url.date_upload}\n`
+                    ini_txt += `Download Url : ${ini_url.download_url}`
+                    reply(ini_txt)
+                    break
+//═════════════════════════ [ Music MENU ] ═════════════════════════
+
+case 'spotifysearch':
+case 'spotify':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/spotifysearch?apikey=itschandra&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = ""
+                    for (var x of get_result) {
+                        ini_txt += `Title : ${x.title}\n`
+                        ini_txt += `Artists : ${x.artists}\n`
+                        ini_txt += `Duration : ${x.duration}\n`
+                        ini_txt += `Link : ${x.link}\n`
+                        ini_txt += `Preview : ${x.preview_url}\n\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+case 'jooxplay':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/jooxplay?apikey=itschandra&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = `Title : ${get_result.info.song}\n`
+                    ini_txt += `Artists : ${get_result.info.singer}\n`
+                    ini_txt += `Duration : ${get_result.info.duration}\n`
+                    ini_txt += `Album : ${get_result.info.album}\n`
+                    ini_txt += `Uploaded : ${get_result.info.date}\n`
+                    ini_txt += `Lirik :\n ${get_result.lirik}\n`
+                    thumbnail = await getBuffer(get_result.image)
+                    await helga.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    get_audio = await getBuffer(get_result.audio[0].link)
+                    await helga.sendMessage(from, get_audio, audio, { mimetype: 'audio/mp4', filename: `${get_result.info.song}.mp3`, quoted: mek })
+                    break
+//═════════════════════════ [ API RANDOM ] ═════════════════════════
+case 'character':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Miku Nakano`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/character?apikey=itschandra&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = `Id : ${get_result.id}\n`
+                    ini_txt += `Name : ${get_result.name.full}\n`
+                    ini_txt += `Native : ${get_result.name.native}\n`
+                    ini_txt += `Favorites : ${get_result.favourites}\n`
+                    ini_txt += `Media : \n`
+                    ini_media = get_result.media.nodes
+                    for (var x of ini_media) {
+                    ini_txt += `- ${x.title.romaji} (${x.title.native})\n`
+                    }
+                    ini_txt += `\nDescription : \n${get_result.description.replace(/__/g, "_")}`
+                    thumbnail = await getBuffer(get_result.image.large)
+                    await helga.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    break
+               
+case 'manga':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/manga?apikey=itschandra&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = `Id : ${get_result.id}\n`
+                    ini_txt += `Id MAL : ${get_result.idMal}\n`
+                    ini_txt += `Title : ${get_result.title.romaji}\n`
+                    ini_txt += `English : ${get_result.title.english}\n`
+                    ini_txt += `Native : ${get_result.title.native}\n`
+                    ini_txt += `Format : ${get_result.format}\n`
+                    ini_txt += `Chapters : ${get_result.chapters}\n`
+                    ini_txt += `Volume : ${get_result.volumes}\n`
+                    ini_txt += `Status : ${get_result.status}\n`
+                    ini_txt += `Source : ${get_result.source}\n`
+                    ini_txt += `Start Date : ${get_result.startDate.day} - ${get_result.startDate.month} - ${get_result.startDate.year}\n`
+                    ini_txt += `End Date : ${get_result.endDate.day} - ${get_result.endDate.month} - ${get_result.endDate.year}\n`
+                    ini_txt += `Genre : ${get_result.genres.join(", ")}\n`
+                    ini_txt += `Synonyms : ${get_result.synonyms.join(", ")}\n`
+                    ini_txt += `Score : ${get_result.averageScore}%\n`
+                    ini_txt += `Characters : \n`
+                    ini_character = get_result.characters.nodes
+                    for (var x of ini_character) {
+                        ini_txt += `- ${x.name.full} (${x.name.native})\n`
+                    }
+                    ini_txt += `\nDescription : ${get_result.description}`
+                    thumbnail = await getBuffer(get_result.coverImage.large)
+                    await helga.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    break
+
+
+case 'anime':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/anime?apikey=itschandra&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = `Id : ${get_result.id}\n`
+                    ini_txt += `Id MAL : ${get_result.idMal}\n`
+                    ini_txt += `Title : ${get_result.title.romaji}\n`
+                    ini_txt += `English : ${get_result.title.english}\n`
+                    ini_txt += `Native : ${get_result.title.native}\n`
+                    ini_txt += `Format : ${get_result.format}\n`
+                    ini_txt += `Episodes : ${get_result.episodes}\n`
+                    ini_txt += `Duration : ${get_result.duration} mins.\n`
+                    ini_txt += `Status : ${get_result.status}\n`
+                    ini_txt += `Season : ${get_result.season}\n`
+                    ini_txt += `Season Year : ${get_result.seasonYear}\n`
+                    ini_txt += `Source : ${get_result.source}\n`
+                    ini_txt += `Start Date : ${get_result.startDate.day} - ${get_result.startDate.month} - ${get_result.startDate.year}\n`
+                    ini_txt += `End Date : ${get_result.endDate.day} - ${get_result.endDate.month} - ${get_result.endDate.year}\n`
+                    ini_txt += `Genre : ${get_result.genres.join(", ")}\n`
+                    ini_txt += `Synonyms : ${get_result.synonyms.join(", ")}\n`
+                    ini_txt += `Score : ${get_result.averageScore}%\n`
+                    ini_txt += `Characters : \n`
+                    ini_character = get_result.characters.nodes
+                    for (var x of ini_character) {
+                        ini_txt += `- ${x.name.full} (${x.name.native})\n`
+                    }
+                    ini_txt += `\nDescription : ${get_result.description}`
+                    thumbnail = await getBuffer(get_result.coverImage.large)
+                    await helga.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    break
+
+case 'kusonime':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://kusonime.com/nanatsu-no-taizai-bd-batch-subtitle-indonesia/`)
+                    ini_url = args[0]
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/kusonime?apikey=itschandra&url=${ini_url}`)
+                    get_result = get_result.result
+                    ini_txt = `Title : ${get_result.title}\n`
+                    ini_txt += `Japanese : ${get_result.japanese}\n`
+                    ini_txt += `Genre : ${get_result.genre}\n`
+                    ini_txt += `Seasons : ${get_result.seasons}\n`
+                    ini_txt += `Producers : ${get_result.producers}\n`
+                    ini_txt += `Type : ${get_result.type}\n`
+                    ini_txt += `Status : ${get_result.status}\n`
+                    ini_txt += `Total Episode : ${get_result.total_episode}\n`
+                    ini_txt += `Score : ${get_result.score}\n`
+                    ini_txt += `Duration : ${get_result.duration}\n`
+                    ini_txt += `Released On : ${get_result.released_on}\n`
+                    ini_txt += `Desc : ${get_result.desc}\n`
+                    link_dl = get_result.link_dl
+                    for (var x in link_dl) {
+                        ini_txt += `\n${x}\n`
+                        for (var y in link_dl[x]) {
+                            ini_txt += `${y} - ${link_dl[x][y]}\n`
+                        }
+                    }
+                    ini_buffer = await getBuffer(get_result.thumbnail)
+                    await helga.sendMessage(from, ini_buffer, image, { quoted: mek, caption: ini_txt })
+                    break
+
+case 'kusonimesearch':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/kusonimesearch?apikey=itschandra&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = `Title : ${get_result.title}\n`
+                    ini_txt += `Japanese : ${get_result.japanese}\n`
+                    ini_txt += `Genre : ${get_result.genre}\n`
+                    ini_txt += `Seasons : ${get_result.seasons}\n`
+                    ini_txt += `Producers : ${get_result.producers}\n`
+                    ini_txt += `Type : ${get_result.type}\n`
+                    ini_txt += `Status : ${get_result.status}\n`
+                    ini_txt += `Total Episode : ${get_result.total_episode}\n`
+                    ini_txt += `Score : ${get_result.score}\n`
+                    ini_txt += `Duration : ${get_result.duration}\n`
+                    ini_txt += `Released On : ${get_result.released_on}\n`
+                    ini_txt += `Desc : ${get_result.desc}\n`
+                    link_dl = get_result.link_dl
+                    for (var x in link_dl) {
+                        ini_txt += `\n${x}\n`
+                        for (var y in link_dl[x]) {
+                            ini_txt += `${y} - ${link_dl[x][y]}\n`
+                        }
+                    }
+                    ini_buffer = await getBuffer(get_result.thumbnail)
+                    await helga.sendMessage(from, ini_buffer, image, { quoted: mek, caption: ini_txt })
+                    break
+
+//═════════════════════════ [ Movie Menu ] ═════════════════════════
+
+case 'lk21':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Transformer`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/lk21?apikey=itschandra&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = `Title : ${get_result.title}\n`
+                    ini_txt += `Link : ${get_result.link}\n`
+                    ini_txt += `Genre : ${get_result.genre}\n`
+                    ini_txt += `Views : ${get_result.views}\n`
+                    ini_txt += `Duration : ${get_result.duration}\n`
+                    ini_txt += `Tahun : ${get_result.tahun}\n`
+                    ini_txt += `Rating : ${get_result.rating}\n`
+                    ini_txt += `Desc : ${get_result.desc}\n`
+                    ini_txt += `Actors : ${get_result.actors.join(", ")}\n`
+                    ini_txt += `Location : ${get_result.location}\n`
+                    ini_txt += `Date Release : ${get_result.date_release}\n`
+                    ini_txt += `Language : ${get_result.language}\n`
+                    ini_txt += `Link Download : ${get_result.link_dl}`
+                    thumbnail = await getBuffer(get_result.thumbnail)
+                    await helga.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    break
+
+
+case 'drakorongoing':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/drakorongoing?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = "Ongoing Drakor\n\n"
+                    for (var x of get_result) {
+                        ini_txt += `Title : ${x.title}\n`
+                        ini_txt += `Link : ${x.link}\n`
+                        ini_txt += `Thumbnail : ${x.thumbnail}\n`
+                        ini_txt += `Year : ${x.category}\n`
+                        ini_txt += `Total Episode : ${x.total_episode}\n`
+                        ini_txt += `Genre : ${x.genre.join(", ")}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+case 'wattpad':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://www.wattpad.com/707367860-kumpulan-quote-tere-liye-tere-liye-quote-quote`)
+                    ini_url = args[0]
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/wattpad?apikey=itschandra&url=${ini_url}`)
+                    get_result = get_result.result
+                    ini_txt = `Title : ${get_result.title}\n`
+                    ini_txt += `Rating : ${get_result.rating}\n`
+                    ini_txt += `Motify date : ${get_result.modifyDate}\n`
+                    ini_txt += `Create date: ${get_result.createDate}\n`
+                    ini_txt += `Word : ${get_result.word}\n`
+                    ini_txt += `Comment : ${get_result.comment}\n`
+                    ini_txt += `Vote : ${get_result.vote}\n`
+                    ini_txt += `Reader : ${get_result.reader}\n`
+                    ini_txt += `Pages : ${get_result.pages}\n`
+                    ini_txt += `Description : ${get_result.desc}\n\n`
+                    ini_txt += `Story : \n${get_result.story}`
+                    thumbnail = await getBuffer(get_result.photo)
+                    await helga.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    break
+                case 'wattpadsearch':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Tere Liye`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/wattpadsearch?apikey=itschandra&query=${query}`)
+                    get_result = get_result.result
+                    ini_txt = "Wattpad Seach : \n"
+                    for (var x of get_result) {
+                        ini_txt += `Title : ${x.title}\n`
+                        ini_txt += `Url : ${x.url}\n`
+                        ini_txt += `Part : ${x.parts}\n`
+                        ini_txt += `Motify date : ${x.modifyDate}\n`
+                        ini_txt += `Create date: ${x.createDate}\n`
+                        ini_txt += `Coment count: ${x.commentCount}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+
+case 'ceritahoror':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/ceritahoror?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = `Title : ${get_result.title}\n`
+                    ini_txt += `Desc : ${get_result.desc}\n`
+                    ini_txt += `Story :\n${get_result.story}\n`
+                    thumbnail = await getBuffer(get_result.thumbnail)
+                    await helga.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
+                    break
+
+//═════════════════════════ [ ~QOUYES RANDOM ] ═════════════════════════
+quotedilan = await fetchJson(`https://api.lolhuman.xyz/api/quotes/dilan?apikey=${apikey}`)
+                   
+                    
+                     
+break
+
+case 'quotesdilan':
+quotedilan = await fetchJson(`https://api.lolhuman.xyz/api/quotes/dilan?apikey=itschandra`)
+dhani = (quotedilan.result)
+sendButMessage(from, dhani, `Klik *NEXT* Untuk Ke ${prefix} Selanjutnya`, [
+{
+buttonId: `.${command}`,
+buttonText: {
+displayText: `NEXT➡️`,
+},
+type: 1,
+},]);
+break
+
+case 'quotesanime':
+                    quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotesnime?apikey=itschandra`)
+                    quotes = quotes.result
+                    quote = quotes.quote
+                    char = quotes.character
+                    anime = quotes.anime
+                    episode = quotes.episode
+                    reply(`_${quote}_\n\n*― ${char}*\n*― ${anime} ${episode}*`)
+                    break
+
+case 'quotesimage':
+cantik = await getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=itschandra`)
+sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
+break
 //═════════════════════════ [ API RANDOM ] ═════════════════════════
 
+case 'heroml':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Fanny`)
+                    hero = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/heroml/${hero}?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = `Name : ${get_result.hero_name}\n`
+                    ini_txt += `Entrance Quotes : ${get_result.ent_quotes}\n`
+                    ini_txt += `Role : ${get_result.detail.role}\n`
+                    ini_txt += `Specialty : ${get_result.detail.specialty}\n`
+                    ini_txt += `Laning : ${get_result.detail.laning_recommendation}\n`
+                    ini_txt += `Release : ${get_result.detail.release_date}\n`
+                    ini_txt += `Movement speed : ${get_result.attr.movement_speed}\n`
+                    ini_txt += `Physical attack : ${get_result.attr.physical_attack}\n`
+                    ini_txt += `Magic power : ${get_result.attr.magic_power}\n`
+                    ini_txt += `Physical defense : ${get_result.attr.physical_defense}\n`
+                    ini_txt += `Magic defense : ${get_result.attr.magic_defense}\n`
+                    ini_txt += `Critical rate : ${get_result.attr.basic_atk_crit_rate}\n`
+                    ini_txt += `Hp : ${get_result.attr.hp}\n`
+                    ini_txt += `Mana : ${get_result.attr.mana}\n`
+                    ini_txt += `Mana regen : ${get_result.attr.mana_regen}\n`
+                    ini_icon = await getBuffer(get_result.icon)
+                    await helga.sendMessage(from, ini_icon, image, { quoted: mek, caption: ini_txt })
+                    break
+//═════════════════════════ [ API RANDOM ] ═════════════════════════
+  case 'jadwaltv':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} rcti`)
+                    channel = args[0]
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/jadwaltv/${channel}?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = `Jadwal TV ${channel.toUpperCase()}\n`
+                    for (var x in get_result) {
+                        ini_txt += `${x} - ${get_result[x]}\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+case 'kodepos':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Slemanan or ${prefix + command} 66154`)
+                    daerah = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/kodepos?apikey=itschandra&query=${daerah}`)
+                    get_result = get_result.result[0]
+                    ini_txt = `Provinsi : ${get_result.province}\n`
+                    ini_txt += `Kabupaten : ${get_result.city}\n`
+                    ini_txt += `Kecamatan : ${get_result.subdistrict}\n`
+                    ini_txt += `Kelurahan : ${get_result.urban}\n`
+                    ini_txt += `Kode Pos : ${get_result.postalcode}`
+                    reply(ini_txt)
+                    break
+
+case 'jarak':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} jakarta - yogyakarta`)
+                    pauls = args.join(" ")
+                    teks1 = pauls.split("-")[0].trim()
+                    teks2 = pauls.split("-")[1].trim()
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/jaraktempuh?apikey=itschandra&kota1=${teks1}&kota2=${teks2}`)
+                    x = get_result.result
+                    ini_txt = `Informasi Jarak dari ${teks1} ke ${teks2} :\n\n`
+                    ini_txt += `\`\`\`◪ Asal :\`\`\` ${x.from.name}\n`
+                    ini_txt += `\`\`\`◪ Garis Lintang :\`\`\` ${x.from.latitude}\n`
+                    ini_txt += `\`\`\`◪ Garis Bujur :\`\`\` ${x.from.longitude}\n\n`
+                    ini_txt += `\`\`\`◪ Tujuan :\`\`\` ${x.to.name}\n`
+                    ini_txt += `\`\`\`◪ Garis Lintang :\`\`\` ${x.to.latitude}\n`
+                    ini_txt += `\`\`\`◪ Garis Bujur :\`\`\` ${x.to.longitude}\n\n`
+                    ini_txt += `\`\`\`◪ Jarak Tempuh :\`\`\` ${x.jarak}\n`
+                    ini_txt += `\`\`\`◪ Waktu Tempuh :\`\`\`\n`
+                    ini_txt += `   ╭───────────────❏\n`
+                    ini_txt += `❍┤ Kereta Api : ${x.kereta_api}\n`
+                    ini_txt += `❍┤ Pesawat : ${x.pesawat}\n`
+                    ini_txt += `❍┤ Mobil : ${x.mobil}\n`
+                    ini_txt += `❍┤ Motor : ${x.motor}\n`
+                    ini_txt += `❍┤ Jalan Kaki : ${x.jalan_kaki}\n`
+                    ini_txt += `   ╰───────────────❏\n`
+                    reply(ini_txt)
+                    break
+//═════════════════════════ [ API RANDOM ] ═════════════════════════
+
+case 'newsinfo':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/newsinfo?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = "Result :\n"
+                    for (var x of get_result) {
+                        ini_txt += `Title : ${x.title}\n`
+                        ini_txt += `Author : ${x.author}\n`
+                        ini_txt += `Source : ${x.source.name}\n`
+                        ini_txt += `Url : ${x.url}\n`
+                        ini_txt += `Published : ${x.publishedAt}\n`
+                        ini_txt += `Description : ${x.description}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+case 'cnnindonesia':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/cnnindonesia?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = "Result :\n"
+                    for (var x of get_result) {
+                        ini_txt += `Judul : ${x.judul}\n`
+                        ini_txt += `Link : ${x.link}\n`
+                        ini_txt += `Tipe : ${x.tipe}\n`
+                        ini_txt += `Published : ${x.waktu}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+                case 'cnnnasional':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/cnnindonesia/nasional?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = "Result :\n"
+                    for (var x of get_result) {
+                        ini_txt += `Judul : ${x.judul}\n`
+                        ini_txt += `Link : ${x.link}\n`
+                        ini_txt += `Tipe : ${x.tipe}\n`
+                        ini_txt += `Published : ${x.waktu}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+                case 'cnninternasional':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/cnnindonesia/internasional?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = "Result :\n"
+                    for (var x of get_result) {
+                        ini_txt += `Judul : ${x.judul}\n`
+                        ini_txt += `Link : ${x.link}\n`
+                        ini_txt += `Tipe : ${x.tipe}\n`
+                        ini_txt += `Published : ${x.waktu}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+
+case 'hoax':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/turnbackhoax?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = 'Info Hoax :\n'
+                    for (var x of get_result) {
+                        ini_txt += `Title : ${x.title}\n`
+                        ini_txt += `Link : ${x.link}\n`
+                        ini_txt += `Posted : ${x.posted}\n`
+                        ini_txt += `Description : ${x.desc}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+case 'kumparan':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/kumparan?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = "Result :\n"
+                    for (var x of get_result) {
+                        ini_txt += `Judul : ${x.title}\n`
+                        ini_txt += `Link : ${x.link}\n`
+                        ini_txt += `Desc : ${x.desc}\n`
+                        ini_txt += `Kategori : ${x.category}\n`
+                        ini_txt += `Published : ${x.publish}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+case 'republika':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/republika?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = "Result :\n"
+                    for (var x of get_result) {
+                        ini_txt += `Judul : ${x.title}\n`
+                        ini_txt += `Link : ${x.link}\n`
+                        ini_txt += `Desc : ${x.desc}\n`
+                        ini_txt += `Kategori : ${x.category}\n`
+                        ini_txt += `Published : ${x.publish}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+case 'jalantikus':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/jalantikus?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = "Result :\n"
+                    for (var x of get_result) {
+                        ini_txt += `Judul : ${x.title}\n`
+                        ini_txt += `Link : ${x.link}\n`
+                        ini_txt += `Kategori : ${x.category}\n`
+                        ini_txt += `Published : ${x.time}\n\n`
+                    }
+                    reply(ini_txt)
+                    break
+
+case 'cekapikey':
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/checkapikey?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = "RESULT :\n"
+                        ini_txt += `Username : *${get_result.username}*\n`
+                        ini_txt += `Requests : *${get_result.requests}*\n`
+                        ini_txt += `Terpkai hari ini : *${get_result.today}*\n`
+                        ini_txt += `Tipe akun : *${get_result.account_type}*\n`
+                        ini_txt += `Exp : *${get_result.expired}*\n\n`
+                    reply(ini_txt)
+                    break
+
+
+                    // Ephoto 360 //
+                case 'wetglass':
+                case 'multicolor3d':
+                case 'watercolor':
+                case 'luxurygold':
+                case 'galaxywallpaper':
+                case 'lighttext':
+                case 'beautifulflower':
+                case 'puppycute':
+                case 'royaltext':
+                case 'heartshaped':
+                case 'birthdaycake':
+                case 'galaxystyle':
+                case 'hologram3d':
+                case 'greenneon':
+                case 'glossychrome':
+                case 'greenbush':
+                case 'metallogo':
+                case 'noeltext':
+                case 'glittergold':
+                case 'textcake':
+                case 'starsnight':
+                case 'wooden3d':
+                case 'textbyname':
+                case 'writegalacy':
+                case 'galaxybat':
+                case 'snow3d':
+                case 'birthdayday':
+                case 'goldplaybutton':
+                case 'silverplaybutton':
+                case 'freefire':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Radja Aditya`)
+                    ini_txt = args.join(" ")
+                    getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=itschandra&text=${ini_txt}`).then((gambar) => {
+                        helga.sendMessage(from, gambar, image, { quoted: mek, caption: `Nih Udah jadi *${command}* nya`})
+                    })
+                    break
+
+                case 'arcade8bit':
+                case 'battlefield4':
+                case 'pubg':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Radja Aditya`)
+                    txt1 = args[0]
+                    txt2 = args[1]
+                    getBuffer(`https://api.lolhuman.xyz/api/photooxy2/${command}?apikey=itschandra&text1=${txt1}&text2=${txt2}`).then((gambar) => {
+                        helga.sendMessage(from, gambar, image, { quoted: mek, caption: `Nih Udah jadi *${command}* nya`})
+                    })
+                    break
+
+break
+                case 'pornhub':
+                case 'glitch':
+                case 'avenger':
+                case 'space':
+                case 'ninjalogo':
+                case 'marvelstudio':
+                case 'lionlogo':
+                case 'wolflogo':
+                case 'steel3d':
+                case 'wallgravity':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Radja Aditya`)
+                    txt1 = args[0]
+                    txt2 = args[1]
+                    getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=itschandra&text1=${txt1}&text2=${txt2}`).then((gambar) => {
+                        helga.sendMessage(from, gambar, image, { quoted: mek, caption: `Nih Udah jadi *${command}* nya`})
+                    })
+                    break
+
+
+case 'shortlink':
+case 'sl':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://www.indocan.asia`)
+                    ini_link = args[0]
+                    ini_buffer = await fetchJson(`https://api.lolhuman.xyz/api/shortlink?apikey=itschandra&url=${ini_link}`)
+                    reply(ini_buffer.result)
+                    break
+
+case 'stalktiktok':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} bulansutena`)
+                    stalk_toktok = args[0]
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/stalktiktok/${stalk_toktok}?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = `Username : ${get_result.username}\n`
+                    ini_txt += `Nickname : ${get_result.nickname}\n`
+                    ini_txt += `Followers : ${get_result.followers}\n`
+                    ini_txt += `Followings : ${get_result.followings}\n`
+                    ini_txt += `Likes : ${get_result.likes}\n`
+                    ini_txt += `Video : ${get_result.video}\n`
+                    ini_txt += `Bio : ${get_result.bio}\n`
+                    pp_tt = await getBuffer(get_result.user_picture)
+                    helga.sendMessage(from, pp_tt, image, { quoted: mek, caption: ini_txt })
+                    break
+
+case 'stalkgithub':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} usernamemu`)
+                    username = args[0]
+                    ini_result = await fetchJson(`https://api.lolhuman.xyz/api/github/${username}?apikey=itschandra`)
+                    ini_result = ini_result.result
+                    ini_buffer = await getBuffer(ini_result.avatar)
+                    ini_txt = `Name : ${ini_result.name}\n`
+                    ini_txt += `Link : ${ini_result.url}\n`
+                    ini_txt += `Public Repo : ${ini_result.public_repos}\n`
+                    ini_txt += `Public Gists : ${ini_result.public_gists}\n`
+                    ini_txt += `Followers : ${ini_result.followers}\n`
+                    ini_txt += `Following : ${ini_result.following}\n`
+                    ini_txt += `Bio : ${ini_result.bio}`
+                    helga.sendMessage(from, ini_buffer, image, { caption: ini_txt })
+                    break
+//═════════════════════════ [ API RANDOM ] ═════════════════════════
+
+case 'wasted':
+return reply(`Example: ${prefix + command} https://i.ibb.co/JdfQ73m/photo-2021-02-05-10-13-39.jpg`)
+                    ini_url = args[0]
+                    ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/editor/wasted?apikey=itschandra&img=${ini_url}`)
+                    await helga.sendMessage(from, ini_buffer, image, { quoted: mek })
+                    break
+                case 'smoji':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} 😭`)
+                    emoji = args[0]
+                    try {
+                        emoji = encodeURI(emoji[0])
+                    } catch {
+                        emoji = encodeURI(emoji)
+                    }
+                    ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/smoji/${emoji}?apikey=itschandra`)
+                    await helga.sendMessage(from, ini_buffer, sticker, { quoted: mek })
+                    break
+
+case 'smoji2':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} 😭`)
+                    emoji = args[0]
+                    try {
+                        emoji = encodeURI(emoji[0])
+                    } catch {
+                        emoji = encodeURI(emoji)
+                    }
+                    ini_buffer = await fetchJson(`https://api.lolhuman.xyz/api/smoji3/${emoji}?apikey=itschandra`)
+                    ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/convert/towebp?apikey=itschandra&img=` + ini_buffer.result.emoji.whatsapp)
+                    await helga.sendMessage(from, ini_buffer, sticker, { quoted: mek })
+                    break
+
+
+case 'mlcheck':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} 84830127/2169`)
+                    ml_id = args[0]
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/mobilelegend/${ml_id}?apikey=itschandra`)
+                    reply(get_result.result)
+                    break
+	//═════════════════════════ [ API RANDOM ] ═════════════════════════		  
 			  
-			  
-			  
+		
 			  
 					
 				case 'sticktag':
@@ -3002,7 +3892,7 @@ Giliran = @${tty.player1.split('@')[0]}`
             if (!e.includes("Cannot set property 'mtype' of undefined")) {
             if (!e.includes("jid is not defined")) {
      console.log(color('|ERROR KAK|', 'red'), color(e, 'cyan'))
-     helga.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `*Subscribe IG : itschandra_28*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Pengembang RadjaAditya",body:"",previewType:"Radja Aditya",thumbnail:fs.readFileSync('./helga.jpg'),sourceUrl:"https://wa.me/628126216321z"}}})
+     helga.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `*Subscribe IG : itschandra_28*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "BuG Erorr....",body:"",previewType:"Radja Aditya",thumbnail:fs.readFileSync('./helga.jpg'),sourceUrl:"https://wa.me/628126216321z"}}})
 	}
     }
     }
