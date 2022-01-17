@@ -1570,7 +1570,7 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 │ ❑ ${prefix}sound47
 │ ❑ ${prefix}sound48
 │ ❑ ${prefix}sound49
-│ ❑ ${prefix}sound50
+│ ❑ ${prefix}sound50-70
 │ ❑ ${prefix}onichan
 ╰───── • ✩ • ─────
 
