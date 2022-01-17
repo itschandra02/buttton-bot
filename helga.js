@@ -320,7 +320,7 @@ try {
 		}
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = helga.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_©itschandra_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = helga.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_©itschandra_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:mek})
              helga.relayWAMessage(res)
         }
         const grupinv = (teks) => {
@@ -446,6 +446,7 @@ key: {
 	}
 }
 // TROLI
+
 const ftrol = {
 	key : {
                           participant : '0@s.whatsapp.net'
@@ -462,6 +463,7 @@ const ftrol = {
                           }
                         }
                       }
+
 // LOCATION
 const floc = {
 	key : {
@@ -727,7 +729,7 @@ helga.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
 			heheh = ms(Date.now() - waktuafk)
-		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Helga Ilham_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Helga Ilham_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
 			}
 		}
 		if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -740,7 +742,7 @@ helga.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                         if (isAfk(mek.key.remoteJid)) return
                         addafk(mek.key.remoteJid)
 						heheh = ms(Date.now() - waktuafk)
-			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© itschandra_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© itschandra_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					}
 				}
 						}
@@ -804,16 +806,16 @@ helga.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 	        helga.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-			helga.sendMessage(from, teks, text, { quoted:ftrol })
+			helga.sendMessage(from, teks, text, { quoted:mek })
 		}
 		const simir = (teks) => {
-			helga.sendMessage(from, teks, text, { quoted:ftrol })
+			helga.sendMessage(from, teks, text, { quoted:mek })
 		}
 		const math = (teks) => {
 				return Math.floor(teks)
 		}
 		const sendMess = (hehe, teks) => {
-			helga.sendMessage(hehe, teks, text, { quoted: ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			helga.sendMessage(hehe, teks, text, { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
 		}
 		const mentions = (teks, memberr, id) => {
 			(id == null || id == undefined || id == false) ? helga.sendMessage(from, teks.trim(), extendedText, { contextInfo: { "mentionedJid": memberr } }) : helga.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": memberr } })
@@ -1019,7 +1021,7 @@ if (!settings.autorecording) {
 helga.updatePresence(from, Presence.recording)
 }
 if (budy.startsWith('helga')){
-sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*RadjaAditya*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*RadjaAditya*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
 }
 if(isButton == 'igm'){
 reply('http://instagram.com/helga_store20')
@@ -1148,7 +1150,7 @@ menu =`itschandra`
 gbutsan = [
 {buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
 {buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
-{buttonId:`script`,buttonText:{displayText:'SEWABOT'},type:1}
+{buttonId:`scripht`,buttonText:{displayText:'SEWABOT'},type:1}
 ]
 mhan = await helga.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
 const btnmenu = {
@@ -1167,28 +1169,32 @@ sendEphemeral: false,
 "body": `${jmn} - ${week} ${weton} - ${calender}`,
 "mediaType": "2",
 "thumbnail": pporigi,
-},mentionedJid:[stod]}, quoted : ftrol})
+},mentionedJid:[stod]}, quoted : mek})
 }
 break
      case 'allmenu':
-        ptod = "6282138919347@s.whatsapp.net"
+     const { wa_version, mcc, mnc, os_version, device_manufacturer, device_model } = helga.user.phone
+        ptod = "6281262163214@s.whatsapp.net"
         stod = `${sender}`
         uwu = '```'
         		var ra2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
 			 stst = await helga.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
+				
 menu = `
 Hai Kak ${pushname}, ${tampilUcapan}
 Silahkan Ketik Command Berikut
 Untuk Menampilkan Menu Bot
 
 
-_⫹⫺🎯Library : Baileys-script_
-_⫹⫺🍰Version : 1.0.0_
-_⫹⫺🍧Language : Javascript_
-_⫹⫺📯Pengembang : Radja Aditya_
-_⫹⫺💬Time : ${timeWib} WIB_
 
+_⫹⫺🎯Library : *Baileys-script*_
+_⫹⫺🍰Version : *2.0.0*_
+_⫹⫺🍧Language : *Javascript*_
+_⫹⫺📯Pengembang : *Radja Aditya*_
+_⫹⫺💬Time : *${timeWib} WIB*_
+_⫹⫺📀Memory : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*_
+_⫹⫺🖥️Operasi System : *${os_version}*_
 
 
 ╭───── • ✩ • ─────
@@ -1217,7 +1223,7 @@ _⫹⫺💬Time : ${timeWib} WIB_
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
-├ ➽ *RANDOM TEXT* 📃
+├ ➽ *RANDOM TEXT & IMAGE* 📃
 │ ❑ ${prefix}quotes
 │ ❑ ${prefix}quotesyt
 │ ❑ ${prefix}quotesdilan
@@ -1234,6 +1240,10 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ ❑ ${prefix}katabucin
 │ ❑ ${prefix}katabucin2
 │ ❑ ${prefix}katabijak
+│ ❑ ${prefix}tongue
+│ ❑ ${prefix}renungan
+│ ❑ ${prefix}truth
+│ ❑ ${prefix}dare
 │ ❑ ${prefix}nama
 ╰───── • ✩ • ─────
 
@@ -1266,6 +1276,17 @@ _⫹⫺💬Time : ${timeWib} WIB_
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
+├ ➽ *WALLPAPER MENU* 🖨️
+│ ❑ ${prefix}wallpaper 
+│ ❑ ${prefix}wallpapermuslim
+│ ❑ ${prefix}wallpapercyberspace
+│ ❑ ${prefix}wallpapermountain
+│ ❑ ${prefix}wallpapertechnology
+│ ❑ ${prefix}wallpaperprogramming
+│ ❑ ${prefix}wallpaperestetik
+╰───── • ✩ • ─────
+
+╭───── • ✩ • ─────
 ├ ➽ *MOVIE & STORY MENU 🎬* 
 │ ❑ ${prefix}lk21
 │ ❑ ${prefix}wattpadsearch
@@ -1276,7 +1297,17 @@ _⫹⫺💬Time : ${timeWib} WIB_
 ╭───── • ✩ • ─────
 ├ ➽ *PLAY MENU ▶️️*
 │ ❑ ${prefix}spotify
+│ ❑ ${prefix}musicplay
 │ ❑ ${prefix}jooxplay
+╰───── • ✩ • ─────
+
+╭───── • ✩ • ─────
+├ ➽ *GAME MENU 🎮* 
+│ ❑ ${prefix}bisakah
+│ ❑ ${prefix}rate
+│ ❑ ${prefix}kapankah
+│ ❑ ${prefix}namaninja
+│ ❑ ${prefix}apakah
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1298,7 +1329,12 @@ _⫹⫺💬Time : ${timeWib} WIB_
  
 ╭───── • ✩ • ─────
 ├ ➽ *TO MENU* 🔘
-│ ❑ ${prefix}toimg < ReplyStiker >
+│ ❑ ${prefix}toimg [ ReplyStiker ]
+│ ❑ ${prefix}texttosound
+│ ❑ ${prefix}ttp4
+│ ❑ ${prefix}ttp2
+│ ❑ ${prefix}ttp3
+│ ❑ ${prefix}ttp
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1318,10 +1354,11 @@ _⫹⫺💬Time : ${timeWib} WIB_
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
-├ ➽ *FUN MENU 🥴* 
+├ ➽ *PRINBON MENU 🥴* 
 │ ❑ ${prefix}artinama
 │ ❑ ${prefix}cerpen
 │ ❑ ${prefix}artimimpi
+│ ❑ ${prefix}zodiak
 │ ❑ ${prefix}ceritahoror
 │ ❑ ${prefix}darkjokes
 ╰───── • ✩ • ─────
@@ -1335,6 +1372,20 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ ❑ ${prefix}panda
 │ ❑ ${prefix}redpanda
 │ ❑ ${prefix}koala
+╰───── • ✩ • ─────
+
+╭───── • ✩ • ─────
+├ ➽ *HEWAN MENU* 📁
+│ ❑ ${prefix}serti1
+│ ❑ ${prefix}serti2
+│ ❑ ${prefix}serti3
+│ ❑ ${prefix}rem
+│ ❑ ${prefix}gura
+│ ❑ ${prefix}sadboy
+│ ❑ ${prefix}kaneki
+│ ❑ ${prefix}panda
+│ ❑ ${prefix}girlneko
+│ ❑ ${prefix}lolimaker
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1432,7 +1483,7 @@ _⫹⫺💬Time : ${timeWib} WIB_
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
-├ ➽ *WSFW Menu* 
+├ ➽ *WSFW MENU 🎞️* 
 │ ❑ ${prefix}awoo
 │ ❑ ${prefix}blowjob
 │ ❑ ${prefix}hentai
@@ -1455,6 +1506,61 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ ❑ ${prefix}jahy
 │ ❑ ${prefix}thighs
 │ ❑ ${prefix}panties
+╰───── • ✩ • ─────
+
+╭───── • ✩ • ─────
+├ ➽ *SOUND MENU 🔊* 
+│ ❑ ${prefix}sound1
+│ ❑ ${prefix}sound2
+│ ❑ ${prefix}sound3
+│ ❑ ${prefix}sound4
+│ ❑ ${prefix}sound5
+│ ❑ ${prefix}sound6
+│ ❑ ${prefix}sound6
+│ ❑ ${prefix}sound7
+│ ❑ ${prefix}sound8
+│ ❑ ${prefix}sound9
+│ ❑ ${prefix}sound10
+│ ❑ ${prefix}sound13
+│ ❑ ${prefix}sound12
+│ ❑ ${prefix}sound14
+│ ❑ ${prefix}sound15
+│ ❑ ${prefix}sound16
+│ ❑ ${prefix}sound17
+│ ❑ ${prefix}sound18
+│ ❑ ${prefix}sound19
+│ ❑ ${prefix}sound20
+│ ❑ ${prefix}sound21
+│ ❑ ${prefix}sound22
+│ ❑ ${prefix}sound23
+│ ❑ ${prefix}sound24
+│ ❑ ${prefix}sound25
+│ ❑ ${prefix}sound26
+│ ❑ ${prefix}sound27
+│ ❑ ${prefix}sound28
+│ ❑ ${prefix}sound29
+│ ❑ ${prefix}sound30
+│ ❑ ${prefix}sound31
+│ ❑ ${prefix}sound32
+│ ❑ ${prefix}sound33
+│ ❑ ${prefix}sound34
+│ ❑ ${prefix}sound35
+│ ❑ ${prefix}sound36
+│ ❑ ${prefix}sound37
+│ ❑ ${prefix}sound38
+│ ❑ ${prefix}sound39
+│ ❑ ${prefix}sound40
+│ ❑ ${prefix}sound41
+│ ❑ ${prefix}sound42
+│ ❑ ${prefix}sound43
+│ ❑ ${prefix}sound44
+│ ❑ ${prefix}sound45
+│ ❑ ${prefix}sound46
+│ ❑ ${prefix}sound47
+│ ❑ ${prefix}sound48
+│ ❑ ${prefix}sound49
+│ ❑ ${prefix}sound50
+│ ❑ ${prefix}onichan
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1495,7 +1601,8 @@ _⫹⫺💬Time : ${timeWib} WIB_
 │ ❑ ${prefix}antiwame on / off
 │ ❑ ${prefix}welcome on / off
 │ ❑ ${prefix}linkgc
-│ ❑ ${prefix}add
+│ ❑ ${prefix}add [ reply ]
+│ ❑ ${prefix}add +628
 │ ❑ ${prefix}kick
 │ ❑ ${prefix}creategroup
 │ ❑ ${prefix}sticktag
@@ -1616,7 +1723,7 @@ footerText:'Terimakasih Sudah Mendaftar\n*©itschandra*',
 buttons: gbutsan,
 headerType: 4
 }
-helga.sendMessage(from, sendBtnVeryy, MessageType.buttonsMessage, {quoted:ftrol, contextInfo: { mentionedJid: [sender]}})
+helga.sendMessage(from, sendBtnVeryy, MessageType.buttonsMessage, {quoted:mek, contextInfo: { mentionedJid: [sender]}})
 	         console.log(color('[Verify]'), color(time, 'yellow'), 'Serial:', color(serialUser, 'Red'), 'in', color(sender || groupName))
 	    // console.log(e)
         break
@@ -1628,6 +1735,12 @@ case  'awoo':
 anu = await fetchJson(`https://waifu.pics/api/sfw/awoo`)
 buffer = await getBuffer(anu.url)
 helga.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./helga.jpg')})
+break
+
+case 'wallpaperestetik':
+if(!q)
+cantik = await getBuffer(`https://api.zeks.me/api/estetikpic?apikey=apivinz`)
+sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
 break
 case  'blowjob':
 
@@ -1688,7 +1801,7 @@ case 'loli':
               imageMsg = ( await helga.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'Radja Aditya', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
-              prep = await helga.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
+              prep = await helga.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               helga.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
               break
@@ -1712,7 +1825,7 @@ const skuygelud = {
     buttons: buttons,
     headerType: 1
 }
-await helga.sendMessage(from, skuygelud, MessageType.buttonsMessage, {quoted: ftrol})
+await helga.sendMessage(from, skuygelud, MessageType.buttonsMessage, {quoted: mek})
 }
 break
 case 'setallmenu':
@@ -1732,7 +1845,7 @@ const skuygf = {
     buttons: buttons,
     headerType: 1
 }
-await helga.sendMessage(from, skuygf, MessageType.buttonsMessage, {quoted: ftrol})
+await helga.sendMessage(from, skuygf, MessageType.buttonsMessage, {quoted: mek})
 }
 break
 //Sampai sini
@@ -1828,7 +1941,7 @@ const buttonMessage = {
     buttons: buttons,
     headerType: 1
 }
-await helga.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted: ftrol})
+await helga.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted: mek})
                 }
                 break
                 case 'setprefix':
@@ -1863,7 +1976,7 @@ const buMess = {
     buttons: buttonss,
     headerType: 1
 }
-await helga.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: ftrol})
+await helga.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: mek})
 break
 				case 'public':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
@@ -1900,7 +2013,7 @@ const btnasu = {
     buttons: punten,
     headerType: 1
 }
-await helga.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol})
+await helga.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: mek})
 					}
 					break
 				 case 'antilink':
@@ -1929,7 +2042,7 @@ const btnasu = {
     buttons: punten,
     headerType: 1
 }
-await helga.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol})
+await helga.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: mek})
 					}
 					break 
 				case 'demote':
@@ -1981,7 +2094,7 @@ const bMess = {
     buttons: buttonss,
     headerType: 1
 }
-await helga.sendMessage(from, bMess, MessageType.buttonsMessage, {quoted: ftrol})
+await helga.sendMessage(from, bMess, MessageType.buttonsMessage, {quoted: mek})
 break
 					case 'opengc':
 					if (!isGroup) return reply(mess.only.group)
@@ -2052,14 +2165,14 @@ break
 					} else {
 						for (let _ of anu) {
 							//sendMess(_.jid, `${body.slice(4)}`)
-buttons = [{buttonId: `menu`, buttonText: {displayText: 'MENU'}, type: 1},{buttonId: `sewa`, buttonText: {displayText: 'SEWA BOT'}, type: 1}]
+buttons = [{buttonId: `.menu`, buttonText: {displayText: 'MENU'}, type: 1},{buttonId: `.rules`, buttonText: {displayText: 'RULES'}, type: 1}]
 const btnbc = {
     contentText: `${body.slice(4)}`,
-    footerText: '*Radja Aditya*',
+    footerText: `_${timeWib}_`,
     buttons: buttons,
     headerType: 1
 }
-await helga.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: ftrol})
+await helga.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: mek})
 						}
 						reply(`Sukses mengirim Broadcast:\n${body.slice(4)}`)
 					}
@@ -2104,6 +2217,439 @@ await helga.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: ftrol
             sendFileFromUrl(res[0].link, document, {quoted: mek, mimetype: 'audio/mp3', filename: res[0].output})
 })
             break
+//SOUND MENU
+
+case 'al-aadiyaat':
+const home = fs.readFileSync('./mp3islam/Al-Aadiyaat.mp3')
+helga.sendMessage(from, home, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break  
+case 'an-nnas':
+const su = fs.readFileSync('./mp3islam/an-nnas.mp3')
+helga.sendMessage(from, su, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'beb':
+const beb = fs.readFileSync('./mp3/syg.mp3')
+client.sendMessage(from, beb, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'gettingold':
+const getting = fs.readFileSync('./mp3/gettingold.mp3')
+helga.sendMessage(from, getting, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'sad':
+const sad1 = fs.readFileSync('./mp3/sad.mp3')
+helga .sendMessage(from, sad1, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'sad2':
+const sad2 = fs.readFileSync('./mp3/sad2.mp3')
+helga .sendMessage(from, sad2, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'sad3':
+const sad3 = fs.readFileSync('./mp3/sad3.mp3')
+helga .sendMessage(from, sad3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'sad4':
+const sad4 = fs.readFileSync('./mp3/sad4.mp3')
+helga .sendMessage(from, sad4, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'aeshtetic':
+const tetik = fs.readFileSync('./mp3/aeshtetic.mp3')
+helga .sendMessage(from, tetik, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'aeshtetic2':
+const tetik2 = fs.readFileSync('./mp3/aeshtetic2.mp3')
+helga .sendMessage(from, tetik3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'aeshtetic3':
+const tetik3 = fs.readFileSync('./mp3/aeshtetic3.mp3')
+helga .sendMessage(from, tetik3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'aeshtetic4':
+const tetik4 = fs.readFileSync('./mp3/aeshtetic4.mp3')
+helga .sendMessage(from, tetik4, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'allnight':
+const allnight = fs.readFileSync('./mp3/allnight.mp3')
+helga .sendMessage(from, allnight, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'baka':
+const baka = fs.readFileSync('./mp3/baka.mp3')
+helga .sendMessage(from, baka, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'lucas':
+const lucas = fs.readFileSync('./mp3/lucas.mp3')
+helga .sendMessage(from, lucas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'araara':
+const prii = fs.readFileSync('./mp3/AraAra.mp3')
+helga.sendMessage(from, prii, MessageType.audio, {quoted:mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sowell':
+const well = fs.readFileSync('./mp3/sowell.mp3')
+helga .sendMessage(from, well, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'wanna':
+const wanna = fs.readFileSync('./mp3/wanna.mp3')
+helga .sendMessage(from, wanna, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'yourskin':
+const skin = fs.readFileSync('./mp3/yourskin.mp3')
+helga.sendMessage(from, skin, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'cutmeoff':
+const moff = fs.readFileSync('./mp3/cutmeoff.mp3')
+helga .sendMessage(from, moff, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'beautiful':
+const ful = fs.readFileSync('./mp3/beautiful.mp3')
+helga.sendMessage(from, ful, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'loosinggame':
+const gam = fs.readFileSync('./mp3/loosinggame.mp3')
+helga .sendMessage(from, gam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'loosinginterest':
+const rest = fs.readFileSync('./mp3/loosinginterest.mp3')
+helga.sendMessage(from, rest, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'playdate':
+const date = fs.readFileSync('./mp3/playdate.mp3')
+helga.sendMessage(from, date, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'yasin':
+yasin = fs.readFileSync('mp3/yasin.mp3')
+helga.sendMessage(from, yasin, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'arrahman':
+arrahman = fs.readFileSync('mp3/arrahman.mp3')
+helga.sendMessage(from, arrahman, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'ayatkursi2':
+const kursi = fs.readFileSync('./mp3/ayatkursi2.mp3')
+helga.sendMessage(from, kursi, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'tilawah':
+const tilawah = fs.readFileSync('./mp3/tilawah.mp3')
+helga.sendMessage(from, tilawah, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'sholawat':
+const nabi = fs.readFileSync('./mp3/sholawatnabi.mp3')
+helga.sendMessage(from, nabi, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'ngaji':
+const ngaji1 = fs.readFileSync('./mp3/ngaji.mp3')
+helga.sendMessage(from, ngaji1, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'ngaji2':
+const ngaji2 = fs.readFileSync('./mp3/ngaji2.mp3')
+helga.sendMessage(from, ngaji2, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'iri':
+const irimp3 = fs.readFileSync('./mp3/iri.mp3');
+helga.sendMessage(from, irimp3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'pale':
+const pa = fs.readFileSync('./mp3/pale.mp3')
+helga.sendMessage(from, pa, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'hallo':
+const hallo = fs.readFileSync('./mp3/hallo.mp3')
+helga.sendMessage(from, hallo, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'magic':
+const magic = fs.readFileSync('mp3/magic.mp3')
+helga.sendMessage(from, magic, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'menyukaiku':
+const menyukaiku = fs.readFileSync('mp3/menyukaiku.mp3')
+helga.sendMessage(from, menyukaiku, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound':
+const soun = fs.readFileSync('./mp3/sound.mp3')
+helga.sendMessage(from, soun, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break 
+case 'sound1':
+satu = fs.readFileSync('./mp3/sound1.mp3');
+helga.sendMessage(from, satu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound2':
+dua = fs.readFileSync('./mp3/sound2.mp3');
+helga.sendMessage(from, dua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound3':
+tiga = fs.readFileSync('./mp3/sound3.mp3');
+helga.sendMessage(from, tiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound4':
+empat = fs.readFileSync('./mp3/sound4.mp3');
+helga.sendMessage(from, empat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound5':
+lima = fs.readFileSync('./mp3/sound5.mp3');
+helga.sendMessage(from, lima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound6':
+enam = fs.readFileSync('./mp3/sound6.mp3');
+helga.sendMessage(from, enam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound7':
+tujuh = fs.readFileSync('./mp3/sound7.mp3');
+helga.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break									
+case 'sound8':
+delapan = fs.readFileSync('./mp3/sound8.mp3');
+helga.sendMessage(from, delapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound9':
+sembilan = fs.readFileSync('./mp3/sound9.mp3');
+helga.sendMessage(from, sembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound10':
+sepuluh = fs.readFileSync('./mp3/sound10.mp3');
+helga.sendMessage(from, sepuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound11':
+sebelas = fs.readFileSync('./mp3/sound11.mp3');
+helga.sendMessage(from, sebelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound12':
+duabelas = fs.readFileSync('./mp3/sound12.mp3');
+helga.sendMessage(from, duabelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound13':
+tigabelas = fs.readFileSync('./mp3/sound13.mp3');
+helga.sendMessage(from, tigabelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound14':
+empatbelas = fs.readFileSync('./mp3/sound14.mp3');
+helga.sendMessage(from, empatbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound15':
+limabelas = fs.readFileSync('./mp3/sound15.mp3');
+helga.sendMessage(from, limabelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound16':
+enambelas = fs.readFileSync('./mp3/sound16.mp3');
+helga.sendMessage(from, enambelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound17':
+tujuhbelas = fs.readFileSync('./mp3/sound17.mp3');
+helga.sendMessage(from, tujuhbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound118':
+delapanbelas = fs.readFileSync('./mp3/sound18.mp3');
+helga.sendMessage(from, delapanbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound19':
+sembilanbelas = fs.readFileSync('./mp3/sound19.mp3');
+helga.sendMessage(from, sembilanbelas, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound20':
+duapuluh = fs.readFileSync('./mp3/sound20.mp3');
+helga.sendMessage(from, duapuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound21':
+duasatu = fs.readFileSync('./mp3/sound21.mp3');
+helga.sendMessage(from, duasatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound22':
+duadua = fs.readFileSync('./mp3/sound22.mp3');
+helga.sendMessage(from, duadua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound23':
+duatiga = fs.readFileSync('./mp3/sound23.mp3');
+helga.sendMessage(from, duatiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound24':
+duaempat = fs.readFileSync('./mp3/sound24.mp3');
+helga.sendMessage(from, duaempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound25':
+dualima = fs.readFileSync('./mp3/sound25.mp3');
+helga.sendMessage(from, dualima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound26':
+duaenam = fs.readFileSync('./mp3/sound26.mp3');
+helga.sendMessage(from, duaenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound27':
+duatujuh = fs.readFileSync('./mp3/sound27.mp3');
+helga.sendMessage(from, duatujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound28':
+duadelapan = fs.readFileSync('./mp3/sound28.mp3');
+helga.sendMessage(from, duadelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound29':
+duasembilan = fs.readFileSync('./mp3/sound29.mp3');
+helga.sendMessage(from, duasembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound30':
+tigapuluh = fs.readFileSync('./mp3/sound30.mp3');
+helga.sendMessage(from, tigapuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound31':
+tigasatu = fs.readFileSync('./mp3/sound31.mp3');
+helga.sendMessage(from, tigasatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound32':
+tigadua = fs.readFileSync('./mp3/sound32.mp3');
+helga.sendMessage(from, tigadua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound33':
+tigatiga = fs.readFileSync('./mp3/sound33.mp3');
+helga.sendMessage(from, tigatiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound34':
+tigaempat = fs.readFileSync('./mp3/sound34.mp3');
+helga.sendMessage(from, tigaempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound35':
+tigalima = fs.readFileSync('./mp3/sound35.mp3');
+helga.sendMessage(from, tigalima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound35':
+tigalima = fs.readFileSync('./mp3/sound35.mp3');
+helga.sendMessage(from, tigalima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound36':
+tigaenam = fs.readFileSync('./mp3/sound36.mp3');
+helga.sendMessage(from, tigaenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound37':
+tigatujuh = fs.readFileSync('./mp3/sound37.mp3');
+helga.sendMessage(from, tigatujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound38':
+tigadelapan = fs.readFileSync('./mp3/sound38.mp3');
+helga.sendMessage(from, tigadelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound39':
+tigasembilan = fs.readFileSync('./mp3/sound39.mp3');
+helga.sendMessage(from, tigasembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound40':
+empatpuluh = fs.readFileSync('./mp3/sound40.mp3');
+helga.sendMessage(from, empatpuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound41':
+empatsatu = fs.readFileSync('./mp3/sound41.mp3');
+helga.sendMessage(from, empatsatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound42':
+empatdua = fs.readFileSync('./mp3/sound42.mp3');
+helga.sendMessage(from, empatdua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound43':
+empattiga = fs.readFileSync('./mp3/sound43.mp3');
+helga.sendMessage(from, empattiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound44':
+empatempat = fs.readFileSync('./mp3/sound44.mp3');
+helga.sendMessage(from, empatempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound45':
+empatlima = fs.readFileSync('./mp3/sound45.mp3');
+helga.sendMessage(from, empatlima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound46':
+empatenam = fs.readFileSync('./mp3/sound46.mp3');
+helga.sendMessage(from, empatenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound47':
+empattujuh = fs.readFileSync('./mp3/sound47.mp3');
+helga.sendMessage(from, empattujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound48':
+empatdelapan = fs.readFileSync('./mp3/sound48.mp3');
+helga.sendMessage(from, empatdelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound49':
+empatsembilan = fs.readFileSync('./mp3/sound49.mp3');
+helga.sendMessage(from, empatsembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound50':
+limapuluh = fs.readFileSync('./mp3/sound50.mp3');
+helga.sendMessage(from, limapuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound51':
+limasatu = fs.readFileSync('./mp3/Kecewa.mp3');
+helga.sendMessage(from, limasatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound52':
+limadua = fs.readFileSync('./mp3/Jarak.mp3');
+helga.sendMessage(from, limadua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound53':
+limatiga = fs.readFileSync('./mp3/Bisa.mp3');
+helga.sendMessage(from, limatiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound54':
+limaempat = fs.readFileSync('./mp3/Disini.mp3');
+helga.sendMessage(from, limaempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound55':
+limalima = fs.readFileSync('./mp3/Batu.mp3');
+helga.sendMessage(from, limalima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'desah':
+delapansatu = fs.readFileSync('./mp3/desahan4.mp3');
+helga.sendMessage(from, delapansatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound56':
+limaenam = fs.readFileSync('./mp3/Adanya.mp3');
+helga.sendMessage(from, limaenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound57':
+limatujuh = fs.readFileSync('./mp3/Pelangi.mp3');
+helga.sendMessage(from, limatujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound58':
+limadelapan = fs.readFileSync('./mp3/sound58.mp3');
+helga.sendMessage(from, limadelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound59':
+limasembilan = fs.readFileSync('./mp3/sound59.mp3');
+helga.sendMessage(from, limasembilan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound60':
+enampuluh = fs.readFileSync('./mp3/sound60.mp3');
+helga.sendMessage(from, enampuluh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound61':
+enamsatu = fs.readFileSync('./mp3/sound61.mp3');
+helga.sendMessage(from, enamsatu, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound62':
+enamdua = fs.readFileSync('./mp3/sound62.mp3');
+helga.sendMessage(from, enamdua, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound63':
+enamtiga = fs.readFileSync('./mp3/sound63.mp3');
+helga.sendMessage(from, enamtiga, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound64':
+enamempat = fs.readFileSync('./mp3/sound64.mp3');
+helga.sendMessage(from, enamempat, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound65':
+enamlima = fs.readFileSync('./mp3/chruch.mp3');
+helga.sendMessage(from, enamlima, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound66':
+enamenam = fs.readFileSync('./mp3/gemes.mp3');
+helga.sendMessage(from, enamenam, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound67':
+enamtujuh = fs.readFileSync('./mp3/hujan.mp3');
+helga.sendMessage(from, enamtujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+case 'sound68':
+enamdelapan = fs.readFileSync('./mp3/Masih.mp3');
+client.sendMessage(from, enamdelapan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break
+//exit
+
+
 case 'ytmp4':
             if (args.length < 1) return reply('Link Nya Mana?')
             if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
@@ -2319,11 +2865,10 @@ loli = await getBuffer(anu.result)
 helga.sendMessage(from, loli, image, {quoted: mek, caption: '*Nih Kak* _Loli_ nya '})
 break
 
-case 'meme': 
-
-anu = await fetchJson(`https://apidhani.herokuapp.com/api/random/meme?apikey=NisaaCantik`)
-meme = await getBuffer(anu.result.url)
-helga.sendMessage(from, meme, image, {quoted: mek, caption: '*Nih Kak* _Meme_ nya'})
+case 'meme':
+if(!q)
+cantik = await getBuffer(`https://api.lolhuman.xyz/api/random/meme?apikey=itschandra`)
+sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
 break
 
 case 'quotes':
@@ -2339,6 +2884,28 @@ displayText: `NEXT➡️`,
 type: 1,
 },]);
 
+break 
+case 'namaninja':  
+if (args.length < 1) return reply(`[❗] Example :\n*${prefix}${command} Naruto*`)  
+F = body.slice(11)
+anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/ninja_name?name=${F}`)
+anu1 = `➻ *NAMA* : ${anu.your_name}\n`
+anu1 += `➻ *NINJA* : ${anu.result}\n`
+reply(anu1)
+ break
+case 'tongue':
+anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/tongue_twister`)
+dhani = `${anu.result}`
+sendButMessage(from, dhani, `Klik *NEXT* Untuk Ke ${command} Selanjutnya`, [
+{
+buttonId: `.tongue`,
+buttonText: {
+displayText: `NEXT➡️`,
+},
+type: 1,
+},]);
+
+
 break
 case 'pantun':
 case 'katabijak':
@@ -2346,7 +2913,7 @@ case 'katailham':
 case 'katasindiran':
 case 'katabucin':
 oke = await fetchJson(`https://apidhani.herokuapp.com/api/random/${command}?apikey=NisaaCantik`)
-dhani = (oke.result.anu)
+dhani = (oke.result)
 sendButMessage(from, dhani, `Klik *NEXT* Untuk Ke ${command} Selanjutnya`, [
 {
 buttonId: `.${command}`,
@@ -2387,17 +2954,89 @@ break;
 case 'qoutesyt':
 case 'quotesyt':
 if(!q)
-reply(`Mohon Menunggu.....`)
 cantik = await getBuffer(`https://api.dapuhy.xyz/api/randomimage/quotesyt?apikey=rcYersFHsr`)
 sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
+break
+
+case 'renungan':
+if(!q)
+cantik = await getBuffer(`https://apidhani.herokuapp.com/api/random/renungan?apikey=NisaaCantik`)
+sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
+break
+
+case 'wallpaper':
+case 'walpaper':
+chan = await fetchJson(`https://apidhani.herokuapp.com/api/random/wallpaper?apikey=NisaaCantik`)
+bokep = await getBuffer(chan.result.url)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
 break
 
 case 'darkjokes':
 if(!q)
 
-cantik = await getBuffer(`https://api.dapuhy.xyz/api/randomimage/darkjokes?apikey=rcYersFHsr`)
+cantik = await getBuffer(`https://apidhani.herokuapp.com/api/random/darkjokes?apikey=NisaaCantik`)
 sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
 break
+
+case 'truth':
+anu = await fetchJson(`https://apidhani.herokuapp.com/api/random/truth?apikey=NisaaCantik`)
+dhani = (anu.result)
+sendButMessage(from, dhani, `Klik *NEXT* Untuk Ke ${command} Selanjutnya`, [
+{
+buttonId: `.${command}`,
+buttonText: {
+displayText: `NEXT➡️`,
+},
+type: 1,
+},]);
+break;
+
+case 'dare':
+anu = await fetchJson(`https://apidhani.herokuapp.com/api/random/dare?apikey=NisaaCantik`)
+dhani = (anu.result)
+sendButMessage(from, dhani, `Klik *NEXT* Untuk Ke ${command} Selanjutnya`, [
+{
+buttonId: `.${command}`,
+buttonText: {
+displayText: `NEXT➡️`,
+},
+type: 1,
+},]);
+break;
+//
+case 'wallpapermuslim':
+chan = await fetchJson(`https://apidhani.herokuapp.com/api/other/wallpapermuslim?apikey=NisaaCantik`)
+bokep = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+break
+
+case 'wallpapercyberspace':
+case 'cyberspace':
+chan = await fetchJson(`https://apidhani.herokuapp.com/api/other/wallpapercyberspace?apikey=NisaaCantik`)
+bokep = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+break
+
+case 'wallpapermountain':
+case 'mountain':
+chan = await fetchJson(`https://apidhani.herokuapp.com/api/other/wallpapermountain?apikey=NisaaCantik`)
+bokep = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+break
+case 'wallpaperprogramming':
+case 'programming':
+chan = await fetchJson(`https:https://apidhani.herokuapp.com/api/other/wallpaperprogramming?apikey=NisaaCantik`)
+bokep = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+break
+
+case 'wallpapertechnology':
+case 'technology':
+chan = await fetchJson(`https://apidhani.herokuapp.com/api/other/wallpapertechnology?apikey=NisaaCantik`)
+bokep = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+break
+
 
 case 'fb':
           case 'facebook':
@@ -2515,6 +3154,14 @@ ilmu2 = `*Nama* : ${q}\n*Hasil* : ${ilmu.result.result}`
 reply(ilmu2)
 break
 
+case 'musicplay':
+case 'playmusic':
+bo = args.join(" ")
+ini = await fetchJson(`https://api-yogipw.herokuapp.com/api/yt/playmp3?query=${bo}`)
+p3 = await getBuffer(ini.url)
+helga.sendMessage(from, p3, audio)
+break
+
 case 'kbbi':
 if (!q) return
 
@@ -2578,6 +3225,219 @@ anu = await fetchJson(`https://api.dapuhy.xyz/api/fun/artimimpi?mimpi=${q}&apike
 bu =`${anu.result}`
 reply(bu)
 break
+
+case 'zodiak':
+if (!q) return reply('contoh: *!zodiak* leo') 
+b = args.join(" ")
+anu = await fetchJson(`https://api.lolhuman.xyz/api/zodiak/${q}?apikey=itschandra`)
+bu =`${anu.result}`
+reply(bu)
+break
+
+
+case 'bisakah':
+bisakah = body.slice(1)
+const bisa =['Bisa','Tidak Bisa','Coba Ulangi','Ngimpi kah?','yakin bisa?']
+const keh = bisa[Math.floor(Math.random() * bisa.length)]
+helga.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
+break
+
+case 'kapankah':
+kapankah = body.slice(1)
+const kapan =['Besok','Lusa','Tadi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi','Tidak Akan Pernah']
+const koh = kapan[Math.floor(Math.random() * kapan.length)]
+helga.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
+break
+
+case 'apakah':
+apakah = body.slice(1)
+const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi','Tanyakan Ayam']
+const kah = apa[Math.floor(Math.random() * apa.length)]
+helga.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
+break
+
+case 'rate':
+rate = body.slice(1)
+const ra =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
+const te = ra[Math.floor(Math.random() * ra.length)]
+helga.sendMessage(from, 'Pertanyaan : *'+rate+'*\n\nJawaban : '+ te+'%', text, { quoted: mek })
+break
+
+break
+case 'sound1':
+case 'sound2':
+case 'sound3':
+case 'sound4':
+case 'sound5':
+case 'sound6':
+case 'sound7':
+case 'sound8':
+case 'sound9':
+case 'sound10':
+case 'sound11':
+case 'sound12':
+case 'sound13':
+case 'sound14':
+case 'sound15':
+case 'sound16':
+case 'sound17':
+case 'sound18':
+case 'sound19':
+case 'sound20':
+case 'sound21':
+case 'sound22':
+case 'sound23':
+case 'sound24':
+case 'sound25':
+case 'sound26':
+case 'sound27':
+case 'sound28':
+case 'sound29':
+case 'sound30':
+case 'sound31':
+case 'sound32':
+case 'sound33':
+case 'sound34':
+case 'sound35':
+case 'sound36':
+case 'sound37':
+case 'sound38':
+case 'sound39':
+case 'sound40':
+case 'sound41':
+case 'sound42':
+case 'sound43':
+case 'sound44':
+case 'sound45':
+case 'sound46':
+case 'sound47':
+case 'sound48':
+case 'sound49':
+case 'sound50':
+case 'sound51':
+case 'sound52':
+case 'sound53':
+case 'sound54':
+case 'sound55':
+case 'sound56':
+case 'sound57':
+case 'sound58':
+case 'sound59':
+case 'sound60':
+case 'sound61':
+case 'sound62':
+case 'sound63':
+case 'sound64':
+case 'sound65':
+case 'sound66':
+case 'sound67':
+case 'sound68':
+case 'sound69':
+case 'sound70':
+omkeh = await getBuffer(`https://hansxd.nasihosting.com/sound/${command}.mp3`)
+helga.sendMessage(from, omkeh, MessageType.audio, { quoted: mek, mimetype: 'audio/mp4', ptt: true })
+break
+case 'onichan':
+omkeh = await getBuffer(`https://hansxd.nasihosting.com/sound/sound70.mp3`)
+helga.sendMessage(from, omkeh, MessageType.audio, { quoted: mek, mimetype: 'audio/mp4', ptt: true })
+break
+
+case 'sound71':
+case 'sound71':
+case 'sound72':
+case 'sound73':
+case 'sound74':
+case 'sound75':
+omkeh = await getBuffer(`https://ojankyaa.000webhostapp.com/sound/${command}.mp3`)
+helga.sendMessage(from, omkeh, MessageType.audio, { quoted: mek, mimetype: 'audio/mp4', ptt: true })
+    break
+
+case 'texttosound':
+if (args.length ==0)return reply(`*Gunakan tanda koma_ pengganti tanda spasi*\nContoh\n${prefix + command} id Selamat,Malam,Kak`)
+code = args[0]
+tulisan = args[1]
+bf = await getBuffer(`https://api.zeks.me/api/tts?apikey=apivinz&code=${code}&text=${tulisan}`)
+helga.sendMessage(from, bf, MessageType.audio, { quoted: mek, mimetype: 'audio/mp4', ptt: true })
+break
+
+//CANVAS
+case 'gura':
+if (args.length ==0)return reply(`Textnya mana kak? Contoh\n${prefix + command} itschandra`)
+bo = args.join(" ")
+bf = await getBuffer(`https://ziy.herokuapp.com/api/Gura?nama=${bo}&apikey=xZiyy`)
+helga.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo By Itschandra Official' })
+break
+
+case 'kaneki':
+case 'rem':
+case 'lolimaker':
+if (args.length ==0)return reply(`Textnya mana kak? Contoh\n${prefix + command} Itschandra`)
+bo = args.join(" ")
+bf = await getBuffer(`https://ziy.herokuapp.com/api/${command}?nama=${bo}&apikey=xZiyy`)
+helga.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo By Itschandra Official' })
+break
+break
+case 'girlneko':
+case 'sadboy':
+if (args.length ==0)return reply(`Textnya mana kak? Contoh\n${prefix + command} Itschandra Official`)
+txt1 = args[0]
+txt2 = args[1]
+bf = await getBuffer(`https://ziy.herokuapp.com/api/${command}?text1=${txt1}&text2=${txt2}&apikey=xZiyy`)
+helga.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo By Itschandra Official' })
+
+break
+case 'serti1':
+case 'serti2':
+case 'serti3':
+if (args.length ==0) return reply(`Text Nya Mana kak? Contoh\n${prefix+command} itschandra`)
+txtt = args.join (" ")
+buff = await getBuffer(`https://sertiojanganzapi.nasihosting.com/serti/${command}/img.php?nama=${txtt}`)
+helga.sendMessage(from, buff, image, { quoted: mek, caption: 'Nih Bro Hasil nya' })
+break
+case 'add2':
+if (!isGroup) return sticGroup(from)
+if (!isGroupAdmins) return sticAdmin(from)
+if (!isBotGroupAdmins) return sticBotAdmin(from)
+if (args.length < 1) return reply('Yang mau di add jin ya?')
+if (args[0].startsWith('08')) return reply('Gunakan kode negara mas')
+try {
+num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
+helga.groupAdd(from, [num])
+} catch (e) {
+console.log('Error :', e)
+reply('Gagal menambahkan target, mungkin karena di private')
+}
+break
+
+case 'simi':
+case 'simih':
+if (args.length == 0) return reply(`Text Nya Mana\nContoh: ${prefix + command} hai`)
+boo = args.join(" ")
+bll = await fetchJson(`https://apikey-bear3.herokuapp.com/api/f/simi?apikey=KingOfBear&query=${boo}`)
+ini_txt =`*Simi: ${bll.result}*`
+reply(ini_txt)
+break
+
+case 'welcome2':
+if (!isGroup) return sticGroup(from)
+if (!isGroupAdmins) return sticAdmin(from)
+if (!isBotGroupAdmins) return sticBotAdmin(from)
+if (Number(args[0]) === 1) {
+if (isWelkom) return reply('Udah aktif')
+welkom.push(from)
+fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
+reply('Sukses mengaktifkan fitur welcome di group ini ✔️')
+} else if (Number(args[0]) === 0) {
+welkom.splice(from, 1)
+fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
+reply('Sukses menonaktifkan fitur welcome di group ini ✔️')
+} else {
+sendButton(from, `MODE WELCOME`, `Silahkan pilih salah satu`, [
+{buttonId: `${prefix}welcome 1`,buttonText: {displayText: `ON`,},type: 1,},
+{buttonId: `${prefix}welcome 0`,buttonText: {displayText: `OFF`,},type: 1,},
+]
+);
+}
 
 //═════════════════════════ [ VOKAL MENU ] ═════════════════════════
 
@@ -3121,6 +3981,8 @@ case 'anime':
                     await helga.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt })
                     break
 
+
+
 case 'kusonime':
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://kusonime.com/nanatsu-no-taizai-bd-batch-subtitle-indonesia/`)
                     ini_url = args[0]
@@ -3560,6 +4422,7 @@ case 'cekapikey':
                     break
 
 
+
                     // Ephoto 360 //
                 case 'wetglass':
                 case 'multicolor3d':
@@ -3801,11 +4664,11 @@ case 'mlcheck':
 punten = [{buttonId: 'welcome off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'welcome on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btngrass = {
     contentText: `${anu}`,
-    footerText: '*Radja Aditya*',
+    footerText: '_itschandra_',
     buttons: punten,
     headerType: 1
 }
-await helga.sendMessage(from, btngrass, MessageType.buttonsMessage, {quoted: ftrol})
+await helga.sendMessage(from, btngrass, MessageType.buttonsMessage, {quoted: mek})
 					}
 					break
 					default:break
