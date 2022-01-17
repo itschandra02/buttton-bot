@@ -1,5 +1,5 @@
 /* Base Ori : Helgaa
-SC Ori : Helgaaz
+SC Ori : Helgaa
 
 
 Thanks a lot to
@@ -1223,6 +1223,17 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
+├ ➽ *ISLAM SOUND* 🎙️
+│ ❑ ${prefix}azan 
+│ ❑ ${prefix}an-nnas
+│ ❑ ${prefix}al-aadiyaat
+│ ❑ ${prefix}azansubuh
+│ ❑ ${prefix}ayatkursi
+│ ❑ ${prefix}doapagihari
+│ ❑ ${prefix}arrahman
+╰───── • ✩ • ─────
+
+╭───── • ✩ • ─────
 ├ ➽ *RANDOM TEXT & IMAGE* 📃
 │ ❑ ${prefix}quotes
 │ ❑ ${prefix}quotesyt
@@ -1250,7 +1261,7 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 ╭───── • ✩ • ─────
 ├ ➽ *INFO MENU ℹ️* 
 │ ❑ ${prefix}infogempa
-│ ❑ ${prefix}kodepos2
+│ ❑ ${prefix}kodepos
 │ ❑ ${prefix}jadwaltv
 │ ❑ ${prefix}jarak
 │ ❑ ${prefix}heroml
@@ -2195,27 +2206,8 @@ await helga.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: mek})
 					members_id.push(mem.jid)
 				}
                 mentions(ht, members_id, false)
-                break
-                case 'ytmp3':
-            if (args.length < 1) return reply('Link Nya Mana ?')
-            if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
-            teks = args.join(' ')
-            
-            res = await y2mateA(teks).catch(e => {
-            reply('_[ ! ] Error Gagal Dalam Memasuki Web Y2mate_')
-})
-            result = `*YOUTUBE MP3 🎵*
-
-*Data Berhasil Didapatkan !!*
-⌖ _Title : ${res[0].judul}_
-⌖ _Ext : MP3_
-⌖ _Size : ${res[0].size}_
-
-\`\`\`Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit\`\`\``
-
-            sendFileFromUrl(res[0].thumb, image, {caption: result, quoted: mek}).then((lalu) => {
-            sendFileFromUrl(res[0].link, document, {quoted: mek, mimetype: 'audio/mp3', filename: res[0].output})
-})
+                
+                
             break
 //SOUND MENU
 
@@ -2223,28 +2215,30 @@ case 'al-aadiyaat':
 const home = fs.readFileSync('./mp3islam/Al-Aadiyaat.mp3')
 helga.sendMessage(from, home, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break  
+
+case 'azan':
+const azan = fs.readFileSync('./mp3islam/azan.mp3')
+helga.sendMessage(from, azan, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+break  
+
 case 'an-nnas':
 const su = fs.readFileSync('./mp3islam/an-nnas.mp3')
 helga.sendMessage(from, su, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break 
-case 'beb':
-const beb = fs.readFileSync('./mp3/syg.mp3')
-client.sendMessage(from, beb, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break 
-case 'gettingold':
-const getting = fs.readFileSync('./mp3/gettingold.mp3')
+case 'qunut':
+const getting = fs.readFileSync('./mp3islam/qunut.mp3')
 helga.sendMessage(from, getting, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break 
-case 'sad':
-const sad1 = fs.readFileSync('./mp3/sad.mp3')
+case 'azansubuh':
+const sad1 = fs.readFileSync('./mp3islam/azansubuh.mp3')
 helga .sendMessage(from, sad1, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break 
-case 'sad2':
-const sad2 = fs.readFileSync('./mp3/sad2.mp3')
+case 'ayatkursi':
+const sad2 = fs.readFileSync('./mp3islam/ayatkursi.mp3')
 helga .sendMessage(from, sad2, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break 
-case 'sad3':
-const sad3 = fs.readFileSync('./mp3/sad3.mp3')
+case 'doapagihari':
+const sad3 = fs.readFileSync('./mp3islam/doapagihari.mp3')
 helga .sendMessage(from, sad3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break 
 case 'sad4':
@@ -2320,7 +2314,7 @@ yasin = fs.readFileSync('mp3/yasin.mp3')
 helga.sendMessage(from, yasin, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break 
 case 'arrahman':
-arrahman = fs.readFileSync('mp3/arrahman.mp3')
+arrahman = fs.readFileSync('mp3islam/arrahman.mp3')
 helga.sendMessage(from, arrahman, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break 
 case 'ayatkursi2':
@@ -2651,26 +2645,36 @@ break
 
 
 case 'ytmp4':
-            if (args.length < 1) return reply('Link Nya Mana?')
-            if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
-            teks = args.join(' ')
-            
-            res = await y2mateV(teks).catch(e => {
-            reply('_[ ! ] Error Gagal Memasuki Web Y2mate_')
-})
-            result = `*YOUTUBE MP4 🎥*
+if (args.length ==0)return reply('Link nya Mana Kak?')
+ini_link = args.join(" ")
+anu = await fetchJson(`https://melcanz.com/yt?url=${ini_link}&apikey=rmci9bR5`)
+ini_txt =`Judul : *${anu.title}*\n`
+ini_txt +=`Author : *${anu.channel}*\n`
+ini_txt +=`Di Publikasi : *${anu.published}*\n`
+ini_txt +=`Jumlah Penonton : *${anu.views}*\n\n`
 
-*Data Berhasil Didapatkan !!*
-⌖ _Title : ${res[0].judul}_
-⌖ _Ext : MP4_
-⌖ _Size : ${res[0].size}_
+thu = await getBuffer(anu.thumb)
+helga.sendMessage(from, thu, image, { quoted: mek, caption: ini_txt })
 
-\`\`\`Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit\`\`\``
+res = await getBuffer(anu.video[1].url)
+helga.sendMessage(from, res, video)
+break
 
-            sendFileFromUrl(res[0].thumb, image, {caption: result, quoted: mek}).then((lalu) => {
-            sendFileFromUrl(res[0].link, video, {quoted: mek, mimetype: 'video/mp4', filename: res[0].output})
-})
-            break
+case 'ytmp3':
+if (args.length ==0)return reply('Link nya Mana Kak?')
+ini_link = args.join(" ")
+anu = await fetchJson(`https://melcanz.com/yt?url=${ini_link}&apikey=rmci9bR5`)
+ini_txt =`Judul : *${anu.title}*\n`
+ini_txt +=`Author : *${anu.channel}*\n`
+ini_txt +=`Di Publikasi : *${anu.published}*\n`
+ini_txt +=`Jumlah Penonton : *${anu.views}*\n\n`
+thu = await getBuffer(anu.thumb)
+helga.sendMessage(from, thu, image, { quoted: mek, caption: ini_txt })
+
+res = await getBuffer(anu.audio[0].url)
+helga.sendMessage(from, res, audio)
+break
+
             case 'exif':
                     if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 					const exifff = `${args.join(' ')}`
