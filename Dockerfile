@@ -20,5 +20,4 @@ COPY . .
 RUN pm2 start helga.js
 RUN pm2 start main.js
 RUN pm2 save
-RUN pm2 logs
-CMD ["npm", "start"]`
+CMD ["pm2-runtime", "main.js"]`
