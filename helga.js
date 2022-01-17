@@ -1,5 +1,5 @@
 /* Base Ori : Helgaa
-SC Ori : Helgaa
+SC Ori : Helgaaz
 
 
 Thanks a lot to
