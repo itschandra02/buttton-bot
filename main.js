@@ -64,7 +64,7 @@ console.log(color('> Instagram : ','silver'), color(`@helga_store20`,'mediumseag
 	fs.writeFileSync(`./session.json`, JSON.stringify(helga.base64EncodedAuthInfo(), null, '\t'))
     
 	if (!settings.autoplaymusic) {
-exec(`cd /sdcard/download && play *mp3`)
+exec(`./mp3islam/azan.mp3`)
 }
    
    helga.on('chat-update', async (mek) => {
@@ -91,8 +91,8 @@ exec(`cd /sdcard/download && play *mp3`)
 			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
 			let buff = await getBuffer(ppimg)
-			masuk =`Halo @${num.split('@')[0]}\nSelamat Datang Di ${mdata.subject}\n\n*Jangan Lupa Isi*\n*Nama* :\n*Umur* :\n*Gender* :\n*Askot* :\n\nKlik Button Di Bawah Untuk Memulai Bot\nNote Jika Tidak Ada Ketik .allmenu`
-			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'👋Welcome,Out Mati'},type:1}]
+			masuk =`Halo @${num.split('@')[0]}\nSelamat Datang Di ${mdata.subject}\n\n*Jangan Lupa Isi*\n*Nama* :\n*Umur* :\n*Gender* :\n*Askot* :\n\n\nNote Jangan Lupa Patuhi Peraturan Group nya Ya !!`
+			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'👋Welcome'},type:1}]
 			mhan = await helga.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${masuk}`,

@@ -230,6 +230,28 @@ try {
 		global.prefix
 		me = helga.user
 		m = simple.smsg(helga, mek)
+		  const sotoy = [
+        '🍊 : 🍒 : 🍐',
+        '🍒 : 🔔 : 🍊',
+        '🍇 : 🍇 : 🍐',
+        '🍊 : 🍋 : 🔔', //ANKER
+        '🔔 : 🍒 : 🍐',
+        '🔔 : 🍒 : 🍊',
+        '🍊 : 🍋 : 🔔',        
+        '🍐 : 🍒 : 🍋',
+        '🍐 : 🍒 : 🍐',
+        '🍊 : 🍒 : 🍒',
+        '🔔 : 🔔 : 🍇',
+        '🍌 : 🍌 : 🔔',
+        '🍐 : 🔔 : 🔔',
+        '🍊 : 🍋 : 🍒',
+        '🍋 : 🍋 : 🍋 Win👑',
+        '🔔 : 🔔 : 🍇',
+        '🔔 : 🍇 : 🍇', 
+        '🔔 : 🍐 : 🔔',
+        '🍌 : 🍌 : 🍌 Win👑'
+        ]
+		
 		const antibot = m.isBaileys
 		const content = JSON.stringify(mek.message)
 		const from = mek.key.remoteJid
@@ -617,6 +639,27 @@ const sendBug = async (target) => {
           {}
         ),{ waitForAck: true }) 
     }
+	const snas = [
+        '🍊 : 🍒 : 🍐',
+        '🍒 : 🔔 : 🍊',
+        '🍇 : 🍇 : 🍐',
+        '🍊 : 🍋 : 🔔', 
+        '🔔 : 🍒 : 🍐',
+        '🔔 : 🍒 : 🍊',
+        '🍊 : 🍋 : 🔔',        
+        '🍐 : 🍒 : 🍋',
+        '🍐 : 🍒 : 🍐',
+        '🍊 : 🍒 : 🍒',
+        '🔔 : 🔔 : 🍇',
+        '🍌 : 🍌 : 🔔',
+        '🍐 : 🔔 : 🔔',
+        '🍊 : 🍋 : 🍒',
+        '🍋 : 🍋 : 🍋 Win👑',
+        '🔔 : 🔔 : 🍇',
+        '🔔 : 🍇 : 🍇', 
+        '🔔 : 🍐 : 🔔',
+        '🍌 : 🍌 : 🍌 Win👑'
+        ]
     //But verify
 const getRegisteredRandomId = () => {
 return _registered[Math.floor(Math.random() * _registered.length)].id
@@ -987,8 +1030,6 @@ reply(String(e))
             }
         }
         
-   //TAGALL
-
 
 			// MUTE
         if (isMuted){
@@ -1030,27 +1071,7 @@ if(isButton == 'ytm'){
 reply('https://youtube.com/c/HelgaZexs妥')
 }
 
-   const sotoy = [
-        '🍊 : 🍒 : 🍐',
-        '🍒 : 🔔 : 🍊',
-        '🍇 : 🍇 : 🍐',
-        '🍊 : 🍋 : 🔔', 
-        '🔔 : 🍒 : 🍐',
-        '🔔 : 🍒 : 🍊',
-        '🍊 : 🍋 : 🔔',        
-        '🍐 : 🍒 : 🍋',
-        '🍐 : 🍒 : 🍐',
-        '🍊 : 🍒 : 🍒',
-        '🔔 : 🔔 : 🍇',
-        '🍌 : 🍌 : 🔔',
-        '🍐 : 🔔 : 🔔',
-        '🍊 : 🍋 : 🍒',
-        '🍋 : 🍋 : 🍋 Win👑',
-        '🔔 : 🔔 : 🍇',
-        '🔔 : 🍇 : 🍇', 
-        '🔔 : 🍐 : 🔔',
-        '🍌 : 🍌 : 🍌 Win👑'
-        ]
+   
         const isStcMedia = isStc !== "" && content.includes("quotedMessage") && !content.includes("extendedTextMessage") || isStc !== "" && content.includes("quotedMessage") && !content.includes("conversation")
 	    const isStcVideo = isStcMedia && content.includes("videoMessage")
 	    const isStcImage = isStcMedia && content.includes("imageMessage")
@@ -1211,7 +1232,6 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 
 ╭───── • ✩ • ─────
 ├ ➽ *STICKER Menu 📌* 
-│ ❑ ${prefix}take
 │ ❑ ${prefix}swm
 │ ❑ ${prefix}telesticker [ link ]
 │ ❑ ${prefix}smoji
@@ -1319,6 +1339,11 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 │ ❑ ${prefix}kapankah
 │ ❑ ${prefix}namaninja
 │ ❑ ${prefix}apakah
+│ ❑ ${prefix}caklontong
+│ ❑ ${prefix}tebakgambar
+│ ❑ ${prefix}siapakah
+│ ❑ ${prefix}suit
+│ ❑ ${prefix}slot
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1341,11 +1366,11 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 ╭───── • ✩ • ─────
 ├ ➽ *TO MENU* 🔘
 │ ❑ ${prefix}toimg [ ReplyStiker ]
-│ ❑ ${prefix}texttosound
 │ ❑ ${prefix}ttp4
 │ ❑ ${prefix}ttp2
 │ ❑ ${prefix}ttp3
 │ ❑ ${prefix}ttp
+│ ❑ ${prefix}tts
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1362,6 +1387,7 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 │ ❑ ${prefix}loli
 │ ❑ ${prefix}meme
 │ ❑ ${prefix}ppcouple
+│ ❑ ${prefix}quotemaker
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1386,7 +1412,7 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
-├ ➽ *HEWAN MENU* 📁
+├ ➽ *CANVAS MENU* 📁
 │ ❑ ${prefix}serti1
 │ ❑ ${prefix}serti2
 │ ❑ ${prefix}serti3
@@ -1394,7 +1420,6 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 │ ❑ ${prefix}gura
 │ ❑ ${prefix}sadboy
 │ ❑ ${prefix}kaneki
-│ ❑ ${prefix}panda
 │ ❑ ${prefix}girlneko
 │ ❑ ${prefix}lolimaker
 ╰───── • ✩ • ─────
@@ -1876,18 +1901,6 @@ client.close()
 }
 break
 
-case 'tagall':
-					if (!isGroup) return reply('KHSUS GROUP BROO!!!!')
-					if (!isGroupAdmins) return reply('Khususs ADMIN')
-					members_id = []
-					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += '\n\n'
-					for (let mem of groupMembers) {
-						teks += `➽ @${mem.jid.split('@')[0]}\n`
-						members_id.push(mem.jid)
-					}
-					mentions(teks, members_id, true)
-					break
 
 case 'owner':
 	case 'creator':
@@ -1907,6 +1920,22 @@ helga.sendMessage(from, {
 }, 'contactsArrayMessage', { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true }})
 break
 
+   //TAGALL
+
+case 'tagall':
+					if (!isGroup) return reply('KHSUS GROUP BROO!!!!')
+					if (!isGroupAdmins) return reply('Khususs ADMIN')
+					members_id = []
+					teks = (args.length > 1) ? body.slice(8).trim() : ''
+					teks += '\n\n'
+					for (let mem of groupMembers) {
+						teks += `➽ @${mem.jid.split('@')[0]}\n`
+						members_id.push(mem.jid)
+					}
+					mentions(teks, members_id, true)
+					break
+					
+					
     //── 「 Download Menu 」 ──//
 
 case 'ig':
@@ -2188,6 +2217,14 @@ await helga.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: mek})
 						reply(`Sukses mengirim Broadcast:\n${body.slice(4)}`)
 					}
 					break
+					 case 'slot':
+            case 'slots':
+            
+            const somtoy = snas[Math.floor(Math.random() * snas.length)]
+            helga.sendMessage(from, `[  🎰 | SLOTS ]\n-----------------\n🍋 : 🍌 : 🍍\n${somtoy}<=====\n🍋 : 🍌 : 🍍\n[  🎰 | SLOTS ]\n\nKeterangan : Jika anda Mendapatkan 3Buah Sama Berarti Anda Menang\n\nContoh : 🍌 : 🍌 : 🍌<=====`, MessageType.text, { quoted: mek })
+            break
+			
+		
 				case 'ttp4':  
 				case 'ttp2':  
 				case 'ttp3':  
@@ -2209,7 +2246,47 @@ await helga.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: mek})
                 
                 
             break
-//SOUND MENU
+			
+		                       case 'tts':
+					  try{
+        if (args.length > 1) {
+        const gtts = require('./lib/gtts')(args[0])
+        if (args.length < 2) return kurr.sendMessage(from, 'Textnya mana gan?', text, {quoted: mek})
+        ngab = budy.slice(7)
+        ranm = getRandom('.mp3')
+        rano = getRandom('.ogg')
+        ngab.length > 600
+        ? reply('Textnya kebanyakan gan')
+        : gtts.save(ranm, ngab, function() {
+            exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
+                fs.unlinkSync(ranm)
+                buff = fs.readFileSync(rano)
+                if (err) return reply('Gagal gan:(')
+                helga.sendMessage(from, buff, audio, {quoted:mek,ptt:true})
+                fs.unlinkSync(rano)
+            })
+        })
+	} else if ( args.length === 1 ){
+		ngab = mek.message.extendedTextMessage.contextInfo.quotedMessage.conversation
+		const gtts = require('./lib/gtts')(args[0])
+        ranm = getRandom('.mp3')
+        rano = getRandom('.ogg')
+        gtts.save(ranm, ngab, function() {
+            exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
+                fs.unlinkSync(ranm)
+                buff = fs.readFileSync(rano)
+                if (err) return reply(mess.error.api)
+                helga.sendMessage(from, buff, audio, {quoted:mek,ptt:true})
+                fs.unlinkSync(rano)
+            })
+        })
+	}
+} catch (e){
+	reply(mess.error.api)
+}
+break 
+
+//SOUND MENU ISLAM
 
 case 'al-aadiyaat':
 const home = fs.readFileSync('./mp3islam/Al-Aadiyaat.mp3')
@@ -2675,6 +2752,19 @@ res = await getBuffer(anu.audio[0].url)
 helga.sendMessage(from, res, audio)
 break
 
+case 'ss':
+
+					buff = await getBuffer(`https://api.lolhuman.xyz/api/ssweb?apikey=itschandra&url=${args[0]}`)
+					helga.sendMessage(from, buff, image, {thumbnail: Buffer.alloc(0), caption: `Nih Om *ScreenShot* nya`, quoted : mek})
+					break
+	
+				case 'pin':
+                if (!isOwner && !mek.key.fromMe) return reply(`Khusus Owner Om`)
+ helga.modifyChat(from, ChatModification.pin)
+                reply('*succes pin this chat*')
+                console.log('pinned chat = ' + from)
+                break
+					
             case 'exif':
                     if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 					const exifff = `${args.join(' ')}`
@@ -2930,9 +3020,9 @@ break
 
 case 'quotesislami':
 case 'qoutesislami':
-anu = await fetchJson(`https://apidhani.herokuapp.com/api/random/quotes/muslim?apikey=NisaaCantik`)
+anu = await fetchJson(`https://hardianto.xyz/api/random/quotes/muslim?apikey=hardianto`)
 dhani = (anu.result.text_id)
-sendButMessage(from, dhani, `Klik *NEXT* Untuk Ke Quotes Selanjutnya`, [
+sendButMessage(from, dhani, `Klik *NEXT* Untuk Ke ${command} Selanjutnya`, [
 {
 buttonId: `${prefix + command}`,
 buttonText: {
@@ -2963,16 +3053,16 @@ sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWA
 break
 
 case 'renungan':
-if(!q)
-cantik = await getBuffer(`https://apidhani.herokuapp.com/api/random/renungan?apikey=NisaaCantik`)
-sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
+chan = await fetchJson(`https://apidhani.herokuapp.com/api/random/renungan?apikey=NisaaCantik`)
+radja = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, radja, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
 break
 
 case 'wallpaper':
 case 'walpaper':
 chan = await fetchJson(`https://apidhani.herokuapp.com/api/random/wallpaper?apikey=NisaaCantik`)
-bokep = await getBuffer(chan.result.url)
-sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+radja = await getBuffer(chan.result.url)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, radja, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
 break
 
 case 'darkjokes':
@@ -3010,46 +3100,37 @@ break;
 //
 case 'wallpapermuslim':
 chan = await fetchJson(`https://apidhani.herokuapp.com/api/other/wallpapermuslim?apikey=NisaaCantik`)
-bokep = await getBuffer(chan.result)
-sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+radja = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, radja, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
 break
 
 case 'wallpapercyberspace':
 case 'cyberspace':
 chan = await fetchJson(`https://apidhani.herokuapp.com/api/other/wallpapercyberspace?apikey=NisaaCantik`)
-bokep = await getBuffer(chan.result)
-sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+radja = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, radja, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
 break
 
 case 'wallpapermountain':
 case 'mountain':
 chan = await fetchJson(`https://apidhani.herokuapp.com/api/other/wallpapermountain?apikey=NisaaCantik`)
-bokep = await getBuffer(chan.result)
-sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+radja = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, radja, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
 break
 case 'wallpaperprogramming':
 case 'programming':
 chan = await fetchJson(`https:https://apidhani.herokuapp.com/api/other/wallpaperprogramming?apikey=NisaaCantik`)
-bokep = await getBuffer(chan.result)
-sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+radja = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, radja, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
 break
 
 case 'wallpapertechnology':
 case 'technology':
 chan = await fetchJson(`https://apidhani.herokuapp.com/api/other/wallpapertechnology?apikey=NisaaCantik`)
-bokep = await getBuffer(chan.result)
-sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+radja = await getBuffer(chan.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, radja, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
 break
 
-
-case 'fb':
-          case 'facebook':
-              if (!q) return reply('Link Nya?')
-              reply('Lagi Proses Upload...')
-              data = await fetchJson(`https://api.lolhuman.xyz/api/facebook?apikey=itschandra&url=${q}`)
-              ini_video = await getBuffer(data.result)
-              helga.sendMessage(from, ini_video, video, { quoted: mek })
-              break
 
 
 case 'nsfwneko':
@@ -3090,8 +3171,8 @@ break
 case 'ass': case 'ahegao': case 'bdsm': case 'blowjob': case 'cuckold': case 'cum': case 'ero': case 'femdom': case 'foot': case 'gangbang': case 'glasses': case 'hentai': case 'jahy': case 'masturbation': case 'orgy': case 'panties': case 'pussy': case 'thighs': case 'yuri': 
 
 bikep = await fetchJson(`https://rest2yeriko.herokuapp.com/api/nsfw/${command}?apikey=Yuzzu`)
-bokep = await getBuffer(bikep.result)
-sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, bokep, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
+radja = await getBuffer(bikep.result)
+sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, radja, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
 break
 
 case 'sfwwallpaper':
@@ -3160,6 +3241,8 @@ break
 
 case 'musicplay':
 case 'playmusic':
+case 'play':
+reply('Lagi Proses Upload...')
 bo = args.join(" ")
 ini = await fetchJson(`https://api-yogipw.herokuapp.com/api/yt/playmp3?query=${bo}`)
 p3 = await getBuffer(ini.url)
@@ -3356,12 +3439,42 @@ omkeh = await getBuffer(`https://ojankyaa.000webhostapp.com/sound/${command}.mp3
 helga.sendMessage(from, omkeh, MessageType.audio, { quoted: mek, mimetype: 'audio/mp4', ptt: true })
     break
 
-case 'texttosound':
-if (args.length ==0)return reply(`*Gunakan tanda koma_ pengganti tanda spasi*\nContoh\n${prefix + command} id Selamat,Malam,Kak`)
-code = args[0]
-tulisan = args[1]
-bf = await getBuffer(`https://api.zeks.me/api/tts?apikey=apivinz&code=${code}&text=${tulisan}`)
-helga.sendMessage(from, bf, MessageType.audio, { quoted: mek, mimetype: 'audio/mp4', ptt: true })
+case 'ttp':
+if (args.length ==0) return reply(`Text Nya Mana kak? Contoh\n${prefix+command} Radja Aditya`)
+tp = args.join (" ")
+ttp = await getBuffer(`https://hardianto.xyz/api/ttpcustom?text=${tp}&color=black&apikey=hardianto`)
+helga.sendMessage(from, ttp, sticker)
+break
+
+case 'caklontong':
+game1 = await fetchJson (`https://rest2yeriko.herokuapp.com/api/kuis/caklontong?apikey=Yuzzu`)
+setTimeout( () => {
+reply(`❑ *Soal* :\n${game1.result.result.soal}\n❑ *Waktu* : 30detik`)
+}, 0)       
+setTimeout( () => {
+reply(`❑ Jawabanya \n${game1.result.result.jawaban}\n❑ *Deskripsi*:\n${game1.result.result.desc}`)
+}, 3000)    
+break
+
+case 'tebakgambar':
+game2 = await fetchJson(`https://rest2yeriko.herokuapp.com/api/kuis/tebakgambar?apikey=Yuzzu`)
+game3 = await getBuffer(game2.result.result.soalImg)
+setTimeout( () => {
+helga.sendMessage(from, game3, image, { quoted:mek, caption: 'Waktu 30detik'})
+}, 0)   
+setTimeout( () => { 
+reply(`❑ Jawabanya : ${game2.result.result.jawaban}`)
+}, 30000)
+break
+
+case 'siapakah':
+game1 = await fetchJson (`https://api.dapuhy.xyz/api/fun/siapakah?apikey=rcYersFHsr`)
+setTimeout( () => {
+reply(`❑ *Pertanyaan* : ${game1.pertanyaan}\n❑ *Waktu* : 30detik`)
+}, 0)       
+setTimeout( () => {
+reply(`❑ *Jawabannya* : ${game1.jawaban}`)
+}, 30000)    
 break
 
 //CANVAS
@@ -3379,7 +3492,7 @@ if (args.length ==0)return reply(`Textnya mana kak? Contoh\n${prefix + command} 
 bo = args.join(" ")
 bf = await getBuffer(`https://ziy.herokuapp.com/api/${command}?nama=${bo}&apikey=xZiyy`)
 helga.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo By Itschandra Official' })
-break
+
 break
 case 'girlneko':
 case 'sadboy':
@@ -3388,8 +3501,8 @@ txt1 = args[0]
 txt2 = args[1]
 bf = await getBuffer(`https://ziy.herokuapp.com/api/${command}?text1=${txt1}&text2=${txt2}&apikey=xZiyy`)
 helga.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo By Itschandra Official' })
-
 break
+
 case 'serti1':
 case 'serti2':
 case 'serti3':
@@ -3398,7 +3511,17 @@ txtt = args.join (" ")
 buff = await getBuffer(`https://sertiojanganzapi.nasihosting.com/serti/${command}/img.php?nama=${txtt}`)
 helga.sendMessage(from, buff, image, { quoted: mek, caption: 'Nih Bro Hasil nya' })
 break
-case 'add2':
+
+case 'quotemaker':
+if (args.length ==0)return reply(`Textnya mana kak? Contoh\n${prefix + command} Itschandra Official`)
+txt1 = args[0]
+by = args[1]
+bf = await getBuffer(`https://api.lolhuman.xyz/api/quotemaker2?apikey=itschandra&text=${txt1 }&author=${by} `)
+helga.sendMessage(from, bf, image, { quoted: mek, caption: `Ini dia ${command} nya !!`})
+break
+break
+//Group
+case 'add':
 if (!isGroup) return sticGroup(from)
 if (!isGroupAdmins) return sticAdmin(from)
 if (!isBotGroupAdmins) return sticBotAdmin(from)
@@ -3412,6 +3535,26 @@ console.log('Error :', e)
 reply('Gagal menambahkan target, mungkin karena di private')
 }
 break
+
+  case 'fitnah':
+            
+            if (!isGroup) return reply(mess.only.group)
+                cr = body.slice(4)
+                cs = cr.split('|')
+                taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+                const target = {
+					contextInfo: {
+						participant: taged,
+						quotedMessage: {
+							extendedTextMessage: {
+								text: cs[1]
+							}
+						}
+					}
+				}
+			helga.sendMessage(from, cs[2], MessageType.text, target)
+				break
+				
 
 case 'simi':
 case 'simih':
@@ -3852,8 +3995,7 @@ case 'stickertele':
                     for (sticker_ in ini_sticker) {
                         ini_buffer = await getBuffer(ini_sticker[sticker_])
                         await helga.sendMessage(from, ini_buffer, sticker)
-                    }
-                    
+                    }      
    break
 
 case 'zippyshare':
@@ -4612,26 +4754,50 @@ case 'mlcheck':
                 helga.updateProfileName(anu)
                 reply(`Sukses mengganti nama ke ${body.slice(9)}`)
                 break
-			case 'add':
-              
-			if (!isGroup) return reply(mess.only.group)
-			if (!isGroupAdmins) return reply(mess.only.admin)
-			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
-			add = mek.message.extendedTextMessage.contextInfo.participant
-		    helga.groupAdd(from, [add])
-				reply('Sukses menambahkan peserta')
-				break
-				case 'kick':
-              
-			if (!isGroup) return reply(mess.only.group)
-			if (!isGroupAdmins) return reply(mess.only.admin)
-			if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply targetnya!')
+
+	case 'kick':
+			if (!isGroup) return sticGroup(from)
+if (!isGroupAdmins) return sticAdmin(from)
+if (!isBotGroupAdmins) return sticBotAdmin(from)
+			if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('reply targetnya!')
 			kick = mek.message.extendedTextMessage.contextInfo.participant
-		    helga.groupRemove(from, [kick])
+helga.groupRemove(from, [kick])
 						reply('Sukses mengeluarkan peserta')
+						
                     break
+					
+case 'suit':
+            
+  if (args.length < 1) return reply('Pilih gunting/batu/kertas')
+					if (args[0] === 'gunting' ) {
+					  gunting = [
+					    "Kamu *Gunting*\nAku *Kertas*\nKamu Menang 😔",
+					    "Kamu *Gunting*\nAku *Batu*\nKamu Kalah 🙂",
+					    "Kamu *Gunting*\nAku *Gunting*\nKita Seri 😏"
+					    ]
+					  gun = gunting[Math.floor(Math.random() * gunting.length)]
+					  reply(gun)
+					} else if (args[0] === 'kertas') {
+					  ker = [
+					    "Kamu *Kertas*\nAku *Batu*\nKamu Menang 😔",
+					    "Kamu *Kertas*\nAku *Gunting*\nKamu Kalah 🙂",
+					    "Kamu *Kertas*\nAku *Kertas*\nKita Seri 😏"
+					    ]
+					  kertas = ker[Math.floor(Math.random() * ker.length)]
+						reply(kertas)
+					} else if (args[0] === 'batu') {
+					  bat = [
+					    "Kamu *Batu*\nAku *Gunting*\nKamu Menang ??",
+					    "Kamu *Batu*\nAku *Kertas*\nKamu Kalah 🙂",
+					    "Kamu *Batu*\nAku *Batu*\nKita Seri 😏"
+					    ]
+					  batu = bat[Math.floor(Math.random() * bat.length)]
+					  reply(batu)
+					} else {
+					  reply('Pilih gunting/batu/kertas')
+					}
+break
+			
                     case 'creategroup':
 			case 'creategrup':
               
