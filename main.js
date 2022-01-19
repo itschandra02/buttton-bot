@@ -88,7 +88,7 @@ exec(`./mp3islam/azan.mp3`)
 			try {
 			ppimg = await helga.getProfilePicture(`${num.split('@')[0]}@c.us`)
 			} catch {
-			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+			ppimg = 'https://i.ibb.co/QrVqZkn/e6cf079d9ef4.jpg'
 			}
 			let buff = await getBuffer(ppimg)
 			masuk =`Halo @${num.split('@')[0]}\nSelamat Datang Di ${mdata.subject}\n\n*Jangan Lupa Isi*\n*Nama* :\n*Umur* :\n*Gender* :\n*Askot* :\n\n\nNote Jangan Lupa Patuhi Peraturan Group nya Ya !!`
@@ -108,7 +108,7 @@ headerType: 4 }
 			try {
 			ppimg = await helga.getProfilePicture(`${num.split('@')[0]}@c.us`)
 			} catch {
-			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+			ppimg = 'https://i.ibb.co/QrVqZkn/e6cf079d9ef4.jpg'
 			}
 			let buff = await getBuffer(ppimg)
 			keluar =`Selamat tinggal @${num.split('@')[0]}\nSemoga tentang disana`

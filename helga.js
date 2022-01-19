@@ -372,7 +372,7 @@ try {
 		try {
 		pporang = await helga.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
 		      } catch {
-		pporang = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+		pporang = 'https://i.ibb.co/QrVqZkn/e6cf079d9ef4.jpg'
 		      }
 		const ofrply = await getBuffer(pporang)
 		const pporigi = fs.readFileSync('./helga.jpg')
@@ -1225,7 +1225,6 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 │ ❑ ${prefix}ytmp3 < link >
 │ ❑ ${prefix}ytsearch < query >
 │ ❑ ${prefix}zippyshare < link >
-│ ❑ ${prefix}facebook < link >
 │ ❑ ${prefix}tiktok < link >
 │ ❑ ${prefix}igdl < link >
 ╰────
@@ -1243,7 +1242,7 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
-├ ➽ *ISLAM SOUND* 🎙️
+├ ➽ *SOUND MENU 🔊* 
 │ ❑ ${prefix}azan 
 │ ❑ ${prefix}an-nnas
 │ ❑ ${prefix}al-aadiyaat
@@ -1251,6 +1250,12 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 │ ❑ ${prefix}ayatkursi
 │ ❑ ${prefix}doapagihari
 │ ❑ ${prefix}arrahman
+│ ❑ ${prefix}sound1
+│ ❑ ${prefix}sound2
+│ ❑ ${prefix}sound3
+│ ❑ ${prefix}sound4
+│ ❑ ${prefix}sound5-70
+│ ❑ ${prefix}onichan
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1366,6 +1371,7 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 ╭───── • ✩ • ─────
 ├ ➽ *TO MENU* 🔘
 │ ❑ ${prefix}toimg [ ReplyStiker ]
+│ ❑ ${prefix}img2url [ Photo ]
 │ ❑ ${prefix}ttp4
 │ ❑ ${prefix}ttp2
 │ ❑ ${prefix}ttp3
@@ -1542,61 +1548,6 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 │ ❑ ${prefix}jahy
 │ ❑ ${prefix}thighs
 │ ❑ ${prefix}panties
-╰───── • ✩ • ─────
-
-╭───── • ✩ • ─────
-├ ➽ *SOUND MENU 🔊* 
-│ ❑ ${prefix}sound1
-│ ❑ ${prefix}sound2
-│ ❑ ${prefix}sound3
-│ ❑ ${prefix}sound4
-│ ❑ ${prefix}sound5
-│ ❑ ${prefix}sound6
-│ ❑ ${prefix}sound6
-│ ❑ ${prefix}sound7
-│ ❑ ${prefix}sound8
-│ ❑ ${prefix}sound9
-│ ❑ ${prefix}sound10
-│ ❑ ${prefix}sound13
-│ ❑ ${prefix}sound12
-│ ❑ ${prefix}sound14
-│ ❑ ${prefix}sound15
-│ ❑ ${prefix}sound16
-│ ❑ ${prefix}sound17
-│ ❑ ${prefix}sound18
-│ ❑ ${prefix}sound19
-│ ❑ ${prefix}sound20
-│ ❑ ${prefix}sound21
-│ ❑ ${prefix}sound22
-│ ❑ ${prefix}sound23
-│ ❑ ${prefix}sound24
-│ ❑ ${prefix}sound25
-│ ❑ ${prefix}sound26
-│ ❑ ${prefix}sound27
-│ ❑ ${prefix}sound28
-│ ❑ ${prefix}sound29
-│ ❑ ${prefix}sound30
-│ ❑ ${prefix}sound31
-│ ❑ ${prefix}sound32
-│ ❑ ${prefix}sound33
-│ ❑ ${prefix}sound34
-│ ❑ ${prefix}sound35
-│ ❑ ${prefix}sound36
-│ ❑ ${prefix}sound37
-│ ❑ ${prefix}sound38
-│ ❑ ${prefix}sound39
-│ ❑ ${prefix}sound40
-│ ❑ ${prefix}sound41
-│ ❑ ${prefix}sound42
-│ ❑ ${prefix}sound43
-│ ❑ ${prefix}sound44
-│ ❑ ${prefix}sound45
-│ ❑ ${prefix}sound46
-│ ❑ ${prefix}sound47
-│ ❑ ${prefix}sound48
-│ ❑ ${prefix}sound49
-│ ❑ ${prefix}sound50-70
-│ ❑ ${prefix}onichan
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1885,21 +1836,6 @@ await helga.sendMessage(from, skuygf, MessageType.buttonsMessage, {quoted: mek})
 }
 break
 //Sampai sini
-case 'jadibot':
-menu = `Enak aja lu mau numpang, sewa lah :v`
-sendButLocation(from, `Enak aja lu mau numpang, sewa lah :v`, "@itshandra_28", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}sewa`,buttonText:{displayText:'SEWA 🎟️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'stopjadibot':
-if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-try {
-reply('Oke')
-fs.unlinkSync(`./sampah/${sender}.json`)
-client.close()
-} catch {
-reply('Oke')
-client.close()
-}
-break
 
 
 case 'owner':
@@ -2721,7 +2657,7 @@ break
 //exit
 
 
-case 'ytmp4':
+  case 'ytmp4':
 if (args.length ==0)return reply('Link nya Mana Kak?')
 ini_link = args.join(" ")
 anu = await fetchJson(`https://melcanz.com/yt?url=${ini_link}&apikey=rmci9bR5`)
@@ -2736,7 +2672,37 @@ helga.sendMessage(from, thu, image, { quoted: mek, caption: ini_txt })
 res = await getBuffer(anu.video[1].url)
 helga.sendMessage(from, res, video)
 break
+	
+     case 'imgtourl':
+       case 'img2url':
 
+               reply(`mohon menunggu!!`) 
+               var imgbb = require('imgbb-uploader')
+               var encmedia  = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+               var media = await  helga.downloadAndSaveMediaMessage(encmedia)       
+               imgbb('39d895963468b814fad0514bd28787e2', media)
+              .then(data => {
+               var caps = `*_IMAGE TO URL_*\n\n*~>  ID :* ${data.id}\n*~>  MimeType :* ${data.image.mime}\n*~>  Extension :* ${data.image.extension}\n*~>  URL :* ${data.display_url}`
+               ibb = fs.readFileSync(media)
+               helga.sendMessage(from, ibb, image, { quoted: mek, caption: caps})
+})
+              .catch(err => {
+               throw err
+})
+               break
+			   
+			          case 'tourl':
+               if ((isMedia && !mek.message.videoMessage || isQuotedImage || isQuotedVideo ) && args.length == 0) {
+               reply(mess.wait)
+               boij = isQuotedImage || isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+               owgi = await helga.downloadMediaMessage(boij)
+               res = await uploadImages(owgi)
+               reply(res)
+               } else {
+               reply('kirim/reply gambar/video')
+}
+               break
+			   
 case 'ytmp3':
 if (args.length ==0)return reply('Link nya Mana Kak?')
 ini_link = args.join(" ")
@@ -2967,8 +2933,8 @@ break
 
 case 'quotes':
 case 'qoutes':
-anu = await fetchJson(`https://apidhani.herokuapp.com/api/random/quotes?apikey=NisaaCantik`)
-dhani = (anu.result.quotes)
+anu = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=itschandra`)
+dhani = (anu.result.quote)
 sendButMessage(from, dhani, `Klik *NEXT* Untuk Ke Quotes Selanjutnya`, [
 {
 buttonId: `.quotes`,
@@ -3492,6 +3458,13 @@ if (args.length ==0)return reply(`Textnya mana kak? Contoh\n${prefix + command} 
 bo = args.join(" ")
 bf = await getBuffer(`https://ziy.herokuapp.com/api/${command}?nama=${bo}&apikey=xZiyy`)
 helga.sendMessage(from, bf, image, { quoted: mek, caption: 'Logo By Itschandra Official' })
+
+case 'wallpaperflare':
+if (args.length ==0)return reply(`Textnya mana kak? Contoh\n${prefix + command} Itschandra`)
+bo = args.join(" ")
+bf = await fetchJson(`https://server-api-rey.herokuapp.com/api/downloader/wallpaperflare?query=${bo}&apikey=apirey`)
+itschandra = await getBuffer(bf.result)
+helga.sendMessage(from, itschandra, image, { quoted: mek, caption: 'Logo By Itschandra Official' })
 
 break
 case 'girlneko':
