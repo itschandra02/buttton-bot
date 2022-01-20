@@ -1,6 +1,4 @@
-/* Base Ori : Helgaa
-SC Ori : Helgaa
-
+/* 
 
 Thanks a lot to
  
