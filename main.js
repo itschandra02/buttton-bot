@@ -30,16 +30,16 @@ const starts = async (helga = new WAConnection()) => {
 	helga.logger.level = 'warn'
 	helga.version = [2, 2140, 12]
 	console.log(color(`\x1b[1;37m> Base New\n`,'cyan'))
-	console.log(color(figlet.textSync('HelgaBase', {
+	console.log(color(figlet.textSync('ISCHANDRA', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
 		width: 80,
 		whitespaceBreak: false
 	}), 'cyan'))
-	console.log(color('\n> YouTube : ','silver'), color(`Helga Zexs`,'mediumseagreen'))
-console.log(color('> TikTok : ','silver'), color(`@ilhamgz_20`,'mediumseagreen'))
-console.log(color('> Instagram : ','silver'), color(`@helga_store20`,'mediumseagreen'))
+	console.log(color('\n> YouTube : ','silver'), color(`itschandra`,'mediumseagreen'))
+console.log(color('> TikTok : ','silver'), color(`@itschhandra_28`,'mediumseagreen'))
+console.log(color('> Instagram : ','silver'), color(`@itschhandra_28`,'mediumseagreen'))
 	helga.browserDescription = [ 'Base Helga', 'ubuntu', '3.0' ]
 
 	helga.on('qr', () => {

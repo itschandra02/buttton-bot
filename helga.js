@@ -1,4 +1,6 @@
-/* 
+/* Base Ori : Helgaa
+SC Ori : Helgaa
+
 
 Thanks a lot to
  
@@ -648,6 +650,7 @@ const sendBug = async (target) => {
         '🍐 : 🍒 : 🍋',
         '🍐 : 🍒 : 🍐',
         '🍊 : 🍒 : 🍒',
+		'🍇 : 🍇 : 🍇 Win👑',
         '🔔 : 🔔 : 🍇',
         '🍌 : 🍌 : 🔔',
         '🍐 : 🔔 : 🔔',
@@ -1063,10 +1066,10 @@ if (budy.startsWith('helga')){
 sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*RadjaAditya*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
 }
 if(isButton == 'igm'){
-reply('http://instagram.com/helga_store20')
+reply('http://instagram.com/itschandra_28')
 }
 if(isButton == 'ytm'){
-reply('https://youtube.com/c/HelgaZexs妥')
+reply('https://youtube.com/c/')
 }
 
    
@@ -1121,41 +1124,21 @@ if (isCmd && !isOwner) antiSpam.addFilter(from)
                 stod = `${sender}`
        stst = await helga.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status     
-       menu = `*── 「 RULES AND FAQ 」 ──*
+       menu = `*「 PERATURAN BOT 」*
 
-1. Jangan spam bot. 🙅
-Sanksi: *⚠️ WARN/SOFT BLOCK*
+1. DILARANG TELFON BOT!!
+2. DILARANG SPAM BOT
+3. DILARANG BERKATA KASAR
+4. DILARANG SPAM VIRTEX
+5. DILARANG TELEFON OWNER
+6. DILARANG SPAM GROUP
+7. DILARANG SPAM ADMIN
+8. DILARANG BERKATA KASAR DI GC
+9. DILARANG MEMASUKAN KE GROUP TAMPA IZIN
+10. JANGAN LUPA SAVE NOMOR OWNER NYA JUGA HEHEHE
+⚠️JIKA KALIAN MELANGGAR.. AKAN DI BLOCK + BANNED!!
 
-2. Jangan telepon bot. ☎️
-Sanksi: *❎ SOFT BLOCK*
-
-3. Jangan mengeksploitasi bot.😖
-Sanksi: *‼️ PERMANENT BLOCK ‼️*
-
-🗯️ Bot tidak atau lambat merespon ?
-➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan. Tetap patuhi rules‼️
-
-🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini masih private dan tidak pernah diperjual belikan ,bijaklah dalam mengetahui penipu.
-
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk sementara bot dalam status free to add.
-
-🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix. Berarti anda bisa menggunakan prefix #, . , Dan prefix wajar lainnya.
-
-🗯️ Kak, kok syaa chat owner tidak direspon?
-➡️ Owner hanya merespon pertanyaan seputar bot Dan kendala eror, tidak untuk kenalan ataupun mengemis script.
-
-
-Jika sudah dipahami rules-nya, silakan ketik *.menu* untuk memulai!
-
-⚠️ Segala kebijakan dan ketentuan Radja Aditya di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
-
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan RadjaAditya-
-😖🙏
-
-Instagram Admin : @itschandra_28
+Instagram : @itschandra_28
 `
 sendButLocation(from, `${menu}`, "*Radja Aditya*", {jpegThumbnail:ofrply,name:""}, [{buttonId:`ping`,buttonText:{displayText:'SPEED BOT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -1209,11 +1192,11 @@ Untuk Menampilkan Menu Bot
 
 _⫹⫺🎯Library : *Baileys-script*_
 _⫹⫺🍰Version : *2.0.0*_
-_⫹⫺🍧Language : *Javascript*_
 _⫹⫺📯Pengembang : *Radja Aditya*_
 _⫹⫺💬Time : *${timeWib} WIB*_
-_⫹⫺📀Memory : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*_
 _⫹⫺🖥️Operasi System : *${os_version}*_
+
+_FITUR DOSA SUDAH DI HAPUS_
 
 
 ╭───── • ✩ • ─────
@@ -1231,6 +1214,7 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 ├ ➽ *STICKER Menu 📌* 
 │ ❑ ${prefix}swm
 │ ❑ ${prefix}telesticker [ link ]
+│ ❑ ${prefix}stickerwa [ Query ]
 │ ❑ ${prefix}smoji
 │ ❑ ${prefix}smoji2
 │ ❑ ${prefix}sticker [ Reply ]
@@ -1254,6 +1238,7 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 │ ❑ ${prefix}sound4
 │ ❑ ${prefix}sound5-70
 │ ❑ ${prefix}onichan
+│ ❑ ${prefix}araara
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
@@ -1398,6 +1383,7 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 ├ ➽ *PRINBON MENU 🥴* 
 │ ❑ ${prefix}artinama
 │ ❑ ${prefix}cerpen
+│ ❑ ${prefix}jadian
 │ ❑ ${prefix}artimimpi
 │ ❑ ${prefix}zodiak
 │ ❑ ${prefix}ceritahoror
@@ -1522,61 +1508,6 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 │ ❑ ${prefix}broken-glass <text>
 ╰───── • ✩ • ─────
 
-╭───── • ✩ • ─────
-├ ➽ *WSFW MENU 🎞️* 
-│ ❑ ${prefix}awoo
-│ ❑ ${prefix}blowjob
-│ ❑ ${prefix}hentai
-│ ❑ ${prefix}megumin
-│ ❑ ${prefix}neko
-│ ❑ ${prefix}trapnime
-│ ❑ ${prefix}loli2
-│ ❑ ${prefix}husbu
-│ ❑ ${prefix}milf
-│ ❑ ${prefix}cosplay
-│ ❑ ${prefix}ass
-│ ❑ ${prefix}ahegao
-│ ❑ ${prefix}bdsm
-│ ❑ ${prefix}cuckold
-│ ❑ ${prefix}cum
-│ ❑ ${prefix}ero
-│ ❑ ${prefix}galsses
-│ ❑ ${prefix}gangbang
-│ ❑ ${prefix}yuri
-│ ❑ ${prefix}jahy
-│ ❑ ${prefix}thighs
-│ ❑ ${prefix}panties
-╰───── • ✩ • ─────
-
-╭───── • ✩ • ─────
-├ ➽ *WSFW Menu v2 💣* 
-│ ❑ ${prefix}nsfwneko
-│ ❑ ${prefix}nsfwkuni
-│ ❑ ${prefix}nsfwcumsluts
-│ ❑ ${prefix}nsfwboobs
-│ ❑ ${prefix}nsfwavatar
-│ ❑ ${prefix}nsfwgirlsolo
-│ ❑ ${prefix}nsfwtits
-│ ❑ ${prefix}nsfwpussyart
-│ ❑ ${prefix}nsfwkemonomimi
-│ ❑ ${prefix}nsfwclassic
-│ ❑ ${prefix}nsfweroneko
-│ ❑ ${prefix}nsfwholo
-│ ❑ ${prefix}nsfwerokemonomimi
-│ ❑ ${prefix}nsfwero
-│ ❑ ${prefix}nsfwkitsune
-│ ❑ ${prefix}nsfwanal
-│ ❑ ${prefix}nsfwketa
-│ ❑ ${prefix}nsfwhentai
-│ ❑ ${prefix}nsfwfutanari
-│ ❑ ${prefix}nsfwholoero
-│ ❑ ${prefix}nsfwcumarts
-│ ❑ ${prefix}nsfwblowjob
-│ ❑ ${prefix}nsfwspank
-│ ❑ ${prefix}nsfwtrap
-│ ❑ ${prefix}nsfwlesbian
-│ ❑ ${prefix}nsfwbj
-╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
 ├ ➽ *Group Menu 🛠️* 
@@ -1635,16 +1566,6 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 ╰───── • ✩ • ─────
 
 ╭───── • ✩ • ─────
-├ ➽ *ASUPAN MENU* 🗿
-│ ❑ ${prefix}62
-│ ❑ ${prefix}santuy
-│ ❑ ${prefix}ukhti
-│ ❑ ${prefix}bocil
-│ ❑ ${prefix}ghea
-│ ❑ ${prefix}rikagusriani
-╰───── • ✩ • ─────
-
-╭───── • ✩ • ─────
 ├ ➽ *INFORMASI 🗺️*
 │ ❑ ${prefix}ping
 │ ❑ ${prefix}speed
@@ -1655,6 +1576,15 @@ _⫹⫺🖥️Operasi System : *${os_version}*_
 ╰───── • ✩ • ─────
 
 
+*「 TERIMKASIH 」*
+
+1. HUMAN | ApiKEY !!
+
+2. HELGA | BASE !!
+
+3. RADJA |  PENGEMBANG !!
+
+⚠️TERIMAKASIH!!
 ║▌│█║▌│ █║▌│█│║▌║
 ║▌│█║▌│ █║▌│█│║▌║
 `
@@ -1713,84 +1643,6 @@ helga.sendMessage(from, sendBtnVeryy, MessageType.buttonsMessage, {quoted:mek, c
 	    // console.log(e)
         break
         
-    //── 「 Nsfw 」 ──//        
-        
-case  'awoo':
-
-anu = await fetchJson(`https://waifu.pics/api/sfw/awoo`)
-buffer = await getBuffer(anu.url)
-helga.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./helga.jpg')})
-break
-
-case 'wallpaperestetik':
-if(!q)
-cantik = await getBuffer(`https://api.zeks.me/api/estetikpic?apikey=apivinz`)
-sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
-break
-case  'blowjob':
-
-anu = await fetchJson(`https://nekos.life/api/v2/img/blowjob`)
-buffer = await getBuffer(anu.url)
-helga.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./helga.jpg')})
-break
-case  'hentai': 
-
-anu = await fetchJson(`https://waifu.pics/api/nsfw/neko`)
-buffer = await getBuffer(anu.url)
-helga.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./helga.jpg')})
-break
-case  'megumin':
-
-anu = await fetchJson(`https://waifu.pics/api/sfw/megumin`)
-buffer = await getBuffer(anu.url)
-helga.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./helga.jpg')})
-break
-case  'neko':
-
-anu = await fetchJson(`https://waifu.pics/api/nsfw/neko`)
-buffer = await getBuffer(anu.url)
-helga.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./helga.jpg')})
-break
-case  'trapnime':
-
-anu = await fetchJson(`https://waifu.pics/api/nsfw/trap`)
-buffer = await getBuffer(anu.url)
-helga.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./helga.jpg')})
-break
-case 'nsfw':
-					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}nsfw 1`)
-					if (Number(args[0]) === 1) {
-						if (isNsfw) return reply('Sudah Aktif Kak')
-						nsfww.push(from)
-						fs.writeFileSync('./database/nsfww.json', JSON.stringify(nsfww))
-						reply('Sukses mengaktifkan fitur nsfw')
-					} else if (Number(args[0]) === 0) {
-						if (!isNsfw) return reply('Sudah Mati Kak')
-						var ini = nsfww.indexOf(from)
-						nsfww.splice(ini, 1)
-						fs.writeFileSync('./database/nsfww.json', JSON.stringify(nsfww))
-						reply('Sukses menonaktifkan fitur nsfw')
-					} else {
-						reply('1 untuk mengaktifkan, 0 untuk mematikan')
-					}
-					break
-case 'loli':
-       case 'husbu':
-       case 'milf':
-       case 'cosplay':
-       case 'wallml':
-              let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
-              let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
-              fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
-		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
-              imageMsg = ( await helga.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'Radja Aditya', imageMessage: imageMsg,
-              contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
-              prep = await helga.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              helga.relayWAMessage(prep)
-              fs.unlinkSync(`./${sender}.jpeg`)
-              break
-              
         //── 「 Owner Menu 」 ──//          
               
               case 'setmenu':
@@ -2181,6 +2033,20 @@ await helga.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: mek})
                 
             break
 			
+			case 'spamsms':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} 0812621636312`)
+                    nomor = args[0]
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam1?apikey=itschandra&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam2?apikey=itschandra&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam3?apikey=itschandra&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam4?apikey=itschandra&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam5?apikey=itschandra&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam6?apikey=itschandra&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam7?apikey=itschandra&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam8?apikey=itschandra&nomor=${nomor}`)
+                    reply("Success")
+                    break
+					
 		                       case 'tts':
 					  try{
         if (args.length > 1) {
@@ -2654,7 +2520,50 @@ client.sendMessage(from, enamdelapan, MessageType.audio, {quoted: mek, mimetype:
 break
 //exit
 
-
+case 'jadian':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} 12 12 2020`)
+                    tanggal = args[0]
+                    bulan = args[1]
+                    tahun = args[2]
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/jadian/${tanggal}/${bulan}/${tahun}?apikey=itschandra`)
+                    get_result = get_result.result
+                    ini_txt = `Karakteristik : ${get_result.karakteristik}\n`
+                    ini_txt += `Deskripsi : ${get_result.deskripsi}`
+                    reply(ini_txt)
+                    break
+			
+			case 'takestick':
+			case 'ts':
+                    if ((isMedia && !mek.message.videoMessage || isQuotedSticker)) {
+                        if (args.length == 0) return reply(`Example: ${prefix + command} LoL|Human`)
+                        const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+                        filePath = await helga.downloadAndSaveMediaMessage(encmedia, filename = getRandom());
+                        file_name = getRandom(".webp")
+                        ini_txt = args.join(" ").split("|")
+                        request({
+                            url: `https://api.lolhuman.xyz/api/convert/towebpauthor?apikey=itschandra`,
+                            method: 'POST',
+                            formData: {
+                                "img": fs.createReadStream(filePath),
+                                "package": ini_txt[0],
+                                "author": ini_txt[1]
+                            },
+                            encoding: "binary"
+                        }, function(error, response, body) {
+                            fs.unlinkSync(filePath)
+                            fs.writeFileSync(file_name, body, "binary")
+                            ini_buff = fs.readFileSync(file_name)
+                            helga.sendMessage(from, ini_buff, sticker, { quoted: mek }).then(() => {
+                                fs.unlinkSync(file_name)
+                            })
+                        });
+                    } else {
+                        reply(`Tag sticker yang sudah dikirim`)
+                    }
+                    break
+					
+			
+					
   case 'ytmp4':
 if (args.length ==0)return reply('Link nya Mana Kak?')
 ini_link = args.join(" ")
@@ -2715,12 +2624,6 @@ helga.sendMessage(from, thu, image, { quoted: mek, caption: ini_txt })
 res = await getBuffer(anu.audio[0].url)
 helga.sendMessage(from, res, audio)
 break
-
-case 'ss':
-
-					buff = await getBuffer(`https://api.lolhuman.xyz/api/ssweb?apikey=itschandra&url=${args[0]}`)
-					helga.sendMessage(from, buff, image, {thumbnail: Buffer.alloc(0), caption: `Nih Om *ScreenShot* nya`, quoted : mek})
-					break
 	
 				case 'pin':
                 if (!isOwner && !mek.key.fromMe) return reply(`Khusus Owner Om`)
@@ -2916,7 +2819,7 @@ case 'ss':
 						})
 					}
 					break
-case 'loli2': 
+case 'loli': 
 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/anime/loli?apikey=NisaaCantik`)
 loli = await getBuffer(anu.result)
@@ -3095,57 +2998,6 @@ radja = await getBuffer(chan.result)
 sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, radja, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
 break
 
-
-
-case 'nsfwneko':
-case 'nsfwlesbian':
-case 'nsfwkuni':
-case 'nsfwcumsluts':
-case 'nsfwclassic':
-case 'nsfwboobs':
-case 'nsfwbj':
-case 'nsfwanal':
-case 'nsfwavatar':
-case 'nsfwyuri':
-case 'nsfwtrap':
-case 'nsfwtits':
-case 'nsfwgirlsolo':
-case 'nsfwpussyart':
-case 'nsfwkemonomimi':
-case 'nsfwkitsune':
-case 'nsfwketa':
-case 'nsfwholo':
-case 'nsfwholoero':
-case 'nsfwhentai':
-case 'nsfwfutanari':
-case 'nsfwfemdom':
-case 'nsfwero':
-case 'nsfwerokitsune':
-case 'nsfwerokemonomimi':
-case 'nsfweroneko':
-case 'nsfwcumarts':
-case 'nsfwblowjob':
-case 'nsfwspank':
-if(!q)
-
-cantik = await getBuffer(`https://api.dapuhy.xyz/api/nsfw/${command}?apikey=rcYersFHsr`)
-sendButImage(from, `ini dia *${command}* nya kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
-break
-
-case 'ass': case 'ahegao': case 'bdsm': case 'blowjob': case 'cuckold': case 'cum': case 'ero': case 'femdom': case 'foot': case 'gangbang': case 'glasses': case 'hentai': case 'jahy': case 'masturbation': case 'orgy': case 'panties': case 'pussy': case 'thighs': case 'yuri': 
-
-bikep = await fetchJson(`https://rest2yeriko.herokuapp.com/api/nsfw/${command}?apikey=Yuzzu`)
-radja = await getBuffer(bikep.result)
-sendButImage(from, `ini dia *${command}* kak !!`, `MAU LAGI?KLIK BUTTON DI BAWAH⬇️⬇️`, radja, [{buttonId: `.${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},]);
-break
-
-case 'sfwwallpaper':
-if(!q)
-
-cantik = await getBuffer(`https://api.dapuhy.xyz/api/sfw/${command}?apikey=rcYersFHsr`)
-sendButImage(from, `ini dia *${command}* kak !!`, `LAGI? KLIK BUTTON DI BAWAH⬇️⬇️`, cantik, [{buttonId: `${prefix}${command}`,buttonText: {displayText: `AGAIN➡️`,},type: 1,},])
-break
-
 case 'art-papper':
 case 'broken-glass':
 case 'neon-light':
@@ -3314,67 +3166,6 @@ const te = ra[Math.floor(Math.random() * ra.length)]
 helga.sendMessage(from, 'Pertanyaan : *'+rate+'*\n\nJawaban : '+ te+'%', text, { quoted: mek })
 break
 
-break
-case 'sound1':
-case 'sound2':
-case 'sound3':
-case 'sound4':
-case 'sound5':
-case 'sound6':
-case 'sound7':
-case 'sound8':
-case 'sound9':
-case 'sound10':
-case 'sound11':
-case 'sound12':
-case 'sound13':
-case 'sound14':
-case 'sound15':
-case 'sound16':
-case 'sound17':
-case 'sound18':
-case 'sound19':
-case 'sound20':
-case 'sound21':
-case 'sound22':
-case 'sound23':
-case 'sound24':
-case 'sound25':
-case 'sound26':
-case 'sound27':
-case 'sound28':
-case 'sound29':
-case 'sound30':
-case 'sound31':
-case 'sound32':
-case 'sound33':
-case 'sound34':
-case 'sound35':
-case 'sound36':
-case 'sound37':
-case 'sound38':
-case 'sound39':
-case 'sound40':
-case 'sound41':
-case 'sound42':
-case 'sound43':
-case 'sound44':
-case 'sound45':
-case 'sound46':
-case 'sound47':
-case 'sound48':
-case 'sound49':
-case 'sound50':
-case 'sound51':
-case 'sound52':
-case 'sound53':
-case 'sound54':
-case 'sound55':
-case 'sound56':
-case 'sound57':
-case 'sound58':
-case 'sound59':
-case 'sound60':
 case 'sound61':
 case 'sound62':
 case 'sound63':
@@ -3492,20 +3283,7 @@ helga.sendMessage(from, bf, image, { quoted: mek, caption: `Ini dia ${command} n
 break
 break
 //Group
-case 'add':
-if (!isGroup) return sticGroup(from)
-if (!isGroupAdmins) return sticAdmin(from)
-if (!isBotGroupAdmins) return sticBotAdmin(from)
-if (args.length < 1) return reply('Yang mau di add jin ya?')
-if (args[0].startsWith('08')) return reply('Gunakan kode negara mas')
-try {
-num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
-helga.groupAdd(from, [num])
-} catch (e) {
-console.log('Error :', e)
-reply('Gagal menambahkan target, mungkin karena di private')
-}
-break
+
 
   case 'fitnah':
             
@@ -3699,7 +3477,7 @@ case 'ganteng': case 'cantik': case 'jelek': case 'goblok':
                    case 'haram': case 'kontol': case 'pakboy': case 'pakgirl': 
                	   case 'wibu': case 'hebat': case 'sadboy': case 'sadgirl': 
   
-				   if (!isGroup) return reply(`Ini Bukan Grub Ya Ajg🌹🤙`)
+				   if (!isGroup) return reply(`Bukan Group Ya Sayang`)
  				   jds = []
 				   const A1 = groupMembers
   		 		   const B1 = groupMembers
@@ -4246,6 +4024,18 @@ case 'ceritahoror':
 //═════════════════════════ [ ~QOUYES RANDOM ] ═════════════════════════
                     
                     
+					  case 'stickerwa':
+					  case 'swa':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Koceng Imot`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/stickerwa?apikey=itschandra&query=${query}`)
+                    get_result = get_result.result[0].stickers
+                    for (var x of get_result) {
+                        ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/convert/towebp?apikey=itschandra&img=${x}`)
+                        await helga.sendMessage(from, ini_buffer, sticker)
+                    }
+                    break
+					
 case 'quotesdilan':
 case 'qoutesdilan':
 quotedilan = await fetchJson(`https://api.lolhuman.xyz/api/quotes/dilan?apikey=itschandra`)
@@ -4259,7 +4049,6 @@ displayText: `NEXT➡️`,
 type: 1,
 },]);
 break
-
 case 'puisi':
 case 'piisi':
 quotedilan = await fetchJson(`https://api.lolhuman.xyz/api/random/puisi?apikey=itschandra`)
@@ -4328,6 +4117,29 @@ type: 1,
 },]);
 break
 
+  case 'ocr':
+                    if ((isMedia && !helga.message.videoMessage || isQuotedImage) && args.length == 0) {
+                        var encmedia = isQuotedImage ? JSON.parse(JSON.stringify(helga).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : helga
+                        var filePath = await lolhuman.downloadAndSaveMediaMessage(encmedia, filename = getRandom());
+                        var form = new FormData();
+                        var stats = fs.statSync(filePath);
+                        var fileSizeInBytes = stats.size;
+                        var fileStream = fs.createReadStream(filePath);
+                        form.append('img', fileStream, { knownLength: fileSizeInBytes });
+                        var options = {
+                            method: 'POST',
+                            credentials: 'include',
+                            body: form
+                        }
+                        get_result = await fetchJson(`https://api.lolhuman.xyz/api/ocr?apikey=itschandra`, {...options })
+                        fs.unlinkSync(filePath)
+                        get_result = get_result.result
+                        reply(`Result : ${get_result}`)
+                    } else {
+                        reply(`Kirim gambar dengan caption ${prefix + command} atau tag gambar yang sudah dikirim`)
+                    }
+                    break
+					
 case 'quotesanime':
                     quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotesnime?apikey=itschandra`)
                     quotes = quotes.result
@@ -4537,7 +4349,15 @@ case 'cekapikey':
                         ini_txt += `Exp : *${get_result.expired}*\n\n`
                     reply(ini_txt)
                     break
+// OTHER
 
+case 'ssweb':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://api.lolhuman.xyz`)
+                    ini_link = args[0]
+                    ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/sswebfull?apikey=itschandra&url=${ini_link}`)
+                    await helga.sendMessage(from, ini_buffer, image, { quoted: mek })
+                    break
+					
 
 
                     // Ephoto 360 //
