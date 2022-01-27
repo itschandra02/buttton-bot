@@ -372,7 +372,7 @@ try {
 		try {
 		pporang = await helga.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
 		      } catch {
-		pporang = 'https://i.ibb.co/QrVqZkn/e6cf079d9ef4.jpg'
+		pporang = 'https://i.ibb.co/dgzdQgz/e54c21c208a1.png'
 		      }
 		const ofrply = await getBuffer(pporang)
 		const pporigi = fs.readFileSync('./helga.jpg')
