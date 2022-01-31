@@ -3275,10 +3275,9 @@ helga.sendMessage(from, buff, image, { quoted: mek, caption: 'Nih Bro Hasil nya'
 break
 
 case 'quotemaker':
-if (args.length ==0)return reply(`Textnya mana kak? Contoh\n${prefix + command} Itschandra Official`)
+if (args.length ==0)return reply(`Textnya mana kak? Contoh\n${prefix + command} Itschandra`)
 txt1 = args[0]
-by = args[1]
-bf = await getBuffer(`https://api.lolhuman.xyz/api/quotemaker2?apikey=itschandra&text=${txt1 }&author=${by} `)
+bf = await getBuffer(`https://api.lolhuman.xyz/api/quotemaker?apikey=itschandra&text=${txt1 } `)
 helga.sendMessage(from, bf, image, { quoted: mek, caption: `Ini dia ${command} nya !!`})
 break
 break
@@ -4808,8 +4807,6 @@ Giliran = @${tty.player1.split('@')[0]}`
             if (!e.includes("Cannot set property 'mtype' of undefined")) {
             if (!e.includes("jid is not defined")) {
      console.log(color('|ERROR KAK|', 'red'), color(e, 'cyan'))
-     helga.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `*Subscribe IG : itschandra_28*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "BuG Erorr....",body:"",previewType:"Radja Aditya",thumbnail:fs.readFileSync('./helga.jpg'),sourceUrl:"https://wa.me/628126216321z"}}})
-	}
     }
     }
     }
